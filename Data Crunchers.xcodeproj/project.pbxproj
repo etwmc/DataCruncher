@@ -1,0 +1,3095 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3314092E1CA8F89B0047F6A8 /* ComplicationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3314092D1CA8F89B0047F6A8 /* ComplicationSetting.swift */; };
+		331E855C1C575EB50016B21D /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E855A1C575E600016B21D /* GraphView.swift */; };
+		332622B81C6734BB00A79613 /* ProtocolCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332622B71C6734BB00A79613 /* ProtocolCipher.swift */; };
+		332622B91C6734BB00A79613 /* ProtocolCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332622B71C6734BB00A79613 /* ProtocolCipher.swift */; };
+		332622BA1C6734BB00A79613 /* ProtocolCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332622B71C6734BB00A79613 /* ProtocolCipher.swift */; };
+		3330A75B1C29048000E311A0 /* Bucket+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A74F1C29048000E311A0 /* Bucket+CoreDataProperties.h */; };
+		3330A75C1C29048000E311A0 /* Bucket+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A74F1C29048000E311A0 /* Bucket+CoreDataProperties.h */; };
+		3330A75D1C29048000E311A0 /* Bucket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7501C29048000E311A0 /* Bucket+CoreDataProperties.m */; };
+		3330A75E1C29048000E311A0 /* Bucket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7501C29048000E311A0 /* Bucket+CoreDataProperties.m */; };
+		3330A75F1C29048000E311A0 /* Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7511C29048000E311A0 /* Bucket.h */; };
+		3330A7601C29048000E311A0 /* Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7511C29048000E311A0 /* Bucket.h */; };
+		3330A7611C29048000E311A0 /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7521C29048000E311A0 /* Bucket.m */; };
+		3330A7621C29048000E311A0 /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7521C29048000E311A0 /* Bucket.m */; };
+		3330A7631C29048000E311A0 /* Data+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7531C29048000E311A0 /* Data+CoreDataProperties.h */; };
+		3330A7641C29048000E311A0 /* Data+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7531C29048000E311A0 /* Data+CoreDataProperties.h */; };
+		3330A7651C29048000E311A0 /* Data+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7541C29048000E311A0 /* Data+CoreDataProperties.m */; };
+		3330A7661C29048000E311A0 /* Data+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7541C29048000E311A0 /* Data+CoreDataProperties.m */; };
+		3330A7671C29048000E311A0 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7551C29048000E311A0 /* Data.h */; };
+		3330A7681C29048000E311A0 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7551C29048000E311A0 /* Data.h */; };
+		3330A7691C29048000E311A0 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7561C29048000E311A0 /* Data.m */; };
+		3330A76A1C29048000E311A0 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7561C29048000E311A0 /* Data.m */; };
+		3330A76B1C29048000E311A0 /* Storage+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7571C29048000E311A0 /* Storage+CoreDataProperties.h */; };
+		3330A76C1C29048000E311A0 /* Storage+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7571C29048000E311A0 /* Storage+CoreDataProperties.h */; };
+		3330A76D1C29048000E311A0 /* Storage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7581C29048000E311A0 /* Storage+CoreDataProperties.m */; };
+		3330A76E1C29048000E311A0 /* Storage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7581C29048000E311A0 /* Storage+CoreDataProperties.m */; };
+		3330A76F1C29048000E311A0 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7591C29048000E311A0 /* Storage.h */; };
+		3330A7701C29048000E311A0 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7591C29048000E311A0 /* Storage.h */; };
+		3330A7711C29048000E311A0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A75A1C29048000E311A0 /* Storage.m */; };
+		3330A7721C29048000E311A0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A75A1C29048000E311A0 /* Storage.m */; };
+		3330A7781C2A155A00E311A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3330A7771C2A155A00E311A0 /* Security.framework */; };
+		3330A77A1C2A156500E311A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3330A7791C2A156500E311A0 /* Security.framework */; };
+		3330A7821C2A527700E311A0 /* CCProcessorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7811C2A527700E311A0 /* CCProcessorContainer.swift */; };
+		3331E8B51C25160900FBC24C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3331E8B41C25160900FBC24C /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		3331E8BB1C251C0000FBC24C /* CCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CAA1C2136C000FE40CF /* CCConverter.swift */; };
+		3331E8BC1C251C0600FBC24C /* CCJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8AE1C24F78B00FBC24C /* CCJSONParser.swift */; };
+		3331E8BF1C251C3D00FBC24C /* CCConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8BE1C251C3D00FBC24C /* CCConsoleLog.swift */; };
+		3334B67A1C5814C500D0328F /* CCMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3334B6791C5814C500D0328F /* CCMapping.swift */; };
+		333B4D161C3B982700678663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D151C3B982700678663 /* AppDelegate.swift */; };
+		333B4D181C3B982700678663 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D171C3B982700678663 /* MasterViewController.swift */; };
+		333B4D1A1C3B982700678663 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D191C3B982700678663 /* DetailViewController.swift */; };
+		333B4D1D1C3B982700678663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D1B1C3B982700678663 /* Main.storyboard */; };
+		333B4D1F1C3B982700678663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D1E1C3B982700678663 /* Assets.xcassets */; };
+		333B4D221C3B982700678663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D201C3B982700678663 /* LaunchScreen.storyboard */; };
+		333B4D2D1C3B985200678663 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D2B1C3B985200678663 /* Interface.storyboard */; };
+		333B4D2F1C3B985200678663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D2E1C3B985200678663 /* Assets.xcassets */; };
+		333B4D361C3B985200678663 /* Wearable Cruncher Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 333B4D351C3B985200678663 /* Wearable Cruncher Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		333B4D3B1C3B985200678663 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D3A1C3B985200678663 /* InterfaceController.swift */; };
+		333B4D3D1C3B985200678663 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D3C1C3B985200678663 /* ExtensionDelegate.swift */; };
+		333B4D3F1C3B985200678663 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333B4D3E1C3B985200678663 /* ComplicationController.swift */; };
+		333B4D411C3B985200678663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333B4D401C3B985200678663 /* Assets.xcassets */; };
+		333B4D451C3B985200678663 /* Wearable Cruncher.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 333B4D291C3B985200678663 /* Wearable Cruncher.app */; };
+		333B4D4E1C3B987800678663 /* CruncherCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3378CE6B1C25435600B9D977 /* CruncherCore.framework */; };
+		333B4D4F1C3B988600678663 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E81C2E4049007A0E1F /* Kanna.framework */; };
+		333B4D501C3B988600678663 /* Kanna.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E81C2E4049007A0E1F /* Kanna.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		333B4D541C3B988600678663 /* CruncherCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3378CE6B1C25435600B9D977 /* CruncherCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		333B4D591C3B989000678663 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333B4D581C3B989000678663 /* CoreData.framework */; };
+		333B4D5A1C3B989900678663 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E21C2E4049007A0E1F /* Kanna.framework */; };
+		333B4D5B1C3B989900678663 /* Kanna.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E21C2E4049007A0E1F /* Kanna.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		333B4D5E1C3B989900678663 /* CruncherCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EC11BCDED380095A6B5 /* CruncherCore.framework */; };
+		333B4D5F1C3B989900678663 /* CruncherCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EC11BCDED380095A6B5 /* CruncherCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		333B4D631C3B98A800678663 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B20B1C2E9435007A0E1F /* CloudKit.framework */; };
+		333B4D651C3B98A800678663 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333B4D641C3B98A800678663 /* CoreData.framework */; };
+		333B4D691C3BA64000678663 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333B4D681C3BA64000678663 /* CloudKit.framework */; };
+		333CFAC41C42210600F7DF6E /* CruncherCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333CFAC31C42210600F7DF6E /* CruncherCoreTests.swift */; };
+		333CFAC61C42210600F7DF6E /* CruncherCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */; };
+		333DBD5B1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DBD5A1C6EC10600A5D4EC /* CacheStorageSpace.swift */; };
+		333DBD5C1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DBD5A1C6EC10600A5D4EC /* CacheStorageSpace.swift */; };
+		333DBD5D1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DBD5A1C6EC10600A5D4EC /* CacheStorageSpace.swift */; };
+		333F48581BE9DC4000AAA0CD /* CruncherPortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333F48561BE9DC4000AAA0CD /* CruncherPortTableViewCell.swift */; };
+		333F48591BE9DC4000AAA0CD /* CruncherPortTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333F48571BE9DC4000AAA0CD /* CruncherPortTableViewCell.xib */; };
+		335131B41C7173400047B025 /* CCStorageContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 335131B21C7173400047B025 /* CCStorageContextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335131B51C7173400047B025 /* CCStorageContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 335131B21C7173400047B025 /* CCStorageContextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335131B61C7173400047B025 /* CCStorageContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 335131B21C7173400047B025 /* CCStorageContextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335131B71C7173400047B025 /* CCStorageContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 335131B31C7173400047B025 /* CCStorageContextManager.m */; };
+		335131B81C7173400047B025 /* CCStorageContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 335131B31C7173400047B025 /* CCStorageContextManager.m */; };
+		335131B91C7173400047B025 /* CCStorageContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 335131B31C7173400047B025 /* CCStorageContextManager.m */; };
+		3355769E1C3C87BA000ED1CE /* CruncherCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */; };
+		3355769F1C3C87BA000ED1CE /* CruncherCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		336CE8F71C7E425100ADF41D /* watchSyncProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339726C1C7450F40010B176 /* watchSyncProtocol.swift */; };
+		336CE8F81C7E425200ADF41D /* watchSyncProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339726C1C7450F40010B176 /* watchSyncProtocol.swift */; };
+		336D07461C51DF90002C89A5 /* CCProcessorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7811C2A527700E311A0 /* CCProcessorContainer.swift */; };
+		3375ED031C2244EB00B9D103 /* CCNPWeightedSummation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CA71C202B6400FE40CF /* CCNPWeightedSummation.swift */; };
+		3375ED041C2244EE00B9D103 /* CCHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375ECFF1C223FCD00B9D103 /* CCHTMLParser.swift */; };
+		3378CE381C25435600B9D977 /* CCStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDB1BCDF1180095A6B5 /* CCStorageBucket.m */; };
+		3378CE3A1C25435600B9D977 /* CCNPWeightedSummation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CA71C202B6400FE40CF /* CCNPWeightedSummation.swift */; };
+		3378CE3B1C25435600B9D977 /* CCStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ECF1BCDED550095A6B5 /* CCStorage.m */; };
+		3378CE3C1C25435600B9D977 /* CCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F0C1BCE36000095A6B5 /* CCData.m */; };
+		3378CE3D1C25435600B9D977 /* CCStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EE21BCDF17E0095A6B5 /* CCStorage.xcdatamodeld */; };
+		3378CE3F1C25435600B9D977 /* CCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F231BCE4DC10095A6B5 /* CCProcessor.m */; };
+		3378CE401C25435600B9D977 /* CCKeyValueStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ED71BCDEED20095A6B5 /* CCKeyValueStorage.m */; };
+		3378CE411C25435600B9D977 /* CCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CAA1C2136C000FE40CF /* CCConverter.swift */; };
+		3378CE421C25435600B9D977 /* CCConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8BE1C251C3D00FBC24C /* CCConsoleLog.swift */; };
+		3378CE431C25435600B9D977 /* CCKeyValueStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDF1BCDF1250095A6B5 /* CCKeyValueStorageBucket.m */; };
+		3378CE441C25435600B9D977 /* CCXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F171BCE408B0095A6B5 /* CCXMLParser.m */; };
+		3378CE461C25435600B9D977 /* CCHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375ECFF1C223FCD00B9D103 /* CCHTMLParser.swift */; };
+		3378CE491C25435600B9D977 /* CCNetworkSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F1C1BCE41F40095A6B5 /* CCNetworkSource.m */; };
+		3378CE4A1C25435600B9D977 /* CCJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8AE1C24F78B00FBC24C /* CCJSONParser.swift */; };
+		3378CE4B1C25435600B9D977 /* CCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F121BCE3EB00095A6B5 /* CCDataSource.m */; };
+		3378CE501C25435600B9D977 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EE61BCDFA940095A6B5 /* CoreData.framework */; };
+		3378CE541C25435600B9D977 /* CCStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ECE1BCDED550095A6B5 /* CCStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE551C25435600B9D977 /* CCStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDA1BCDF1180095A6B5 /* CCStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE571C25435600B9D977 /* CCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F221BCE4DC10095A6B5 /* CCProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE581C25435600B9D977 /* CCXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F161BCE408B0095A6B5 /* CCXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE591C25435600B9D977 /* CCNetworkSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F1B1BCE41F40095A6B5 /* CCNetworkSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE5A1C25435600B9D977 /* CCDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F111BCE3EB00095A6B5 /* CCDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE5C1C25435600B9D977 /* CCKeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ED61BCDEED20095A6B5 /* CCKeyValueStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE5D1C25435600B9D977 /* CCKeyValueStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDE1BCDF1250095A6B5 /* CCKeyValueStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE5E1C25435600B9D977 /* CCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0B1BCE36000095A6B5 /* CCData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3378CE631C25435600B9D977 /* CCStorageBucket_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F031BCE0A780095A6B5 /* CCStorageBucket_Priv.h */; };
+		3378CE7B1C254B8500B9D977 /* CCWatchTextComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3378CE7A1C254B8500B9D977 /* CCWatchTextComplication.swift */; };
+		3378CE7D1C254BB600B9D977 /* ClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3378CE7C1C254BB600B9D977 /* ClockKit.framework */; };
+		337FE49A1C2CCE7200DAADBB /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337FE4991C2CCE7200DAADBB /* WatchSession.swift */; };
+		337FE49B1C2CCE7200DAADBB /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337FE4991C2CCE7200DAADBB /* WatchSession.swift */; };
+		337FE49D1C2CD01E00DAADBB /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337FE49C1C2CD01E00DAADBB /* WatchConnectivity.framework */; };
+		337FE49F1C2CD02900DAADBB /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337FE49E1C2CD02900DAADBB /* WatchConnectivity.framework */; };
+		337FE4A01C2CEC6900DAADBB /* CCWatchTextComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3378CE7A1C254B8500B9D977 /* CCWatchTextComplication.swift */; };
+		3380D71C1C2EA880006A674B /* DeviceConsolidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4B2071C2E9420007A0E1F /* DeviceConsolidate.swift */; };
+		3380D7211C310C0C006A674B /* CCNumberDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380D7201C310C0C006A674B /* CCNumberDisplay.swift */; };
+		3380D7221C310C0C006A674B /* CCNumberDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380D7201C310C0C006A674B /* CCNumberDisplay.swift */; };
+		3380D7241C320AC2006A674B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380D7231C320AC2006A674B /* CoreGraphics.framework */; };
+		3380D7261C320ACC006A674B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380D7251C320ACC006A674B /* CoreGraphics.framework */; };
+		3380D7281C320AD3006A674B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3380D7271C320AD3006A674B /* CoreGraphics.framework */; };
+		3387661D1C377AB1009234F3 /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387661C1C377AB1009234F3 /* MainInterface.swift */; };
+		3387661E1C377AB1009234F3 /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387661C1C377AB1009234F3 /* MainInterface.swift */; };
+		3387661F1C377AB1009234F3 /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387661C1C377AB1009234F3 /* MainInterface.swift */; };
+		338766221C3889EC009234F3 /* CKHelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338766211C3889EC009234F3 /* CKHelperFunction.swift */; };
+		338766241C3889EC009234F3 /* CKHelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338766211C3889EC009234F3 /* CKHelperFunction.swift */; };
+		338B696C1BE0B8E500BA2B48 /* CruncherPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338B696A1BE0B8E500BA2B48 /* CruncherPartViewController.swift */; };
+		338B696D1BE0B8E500BA2B48 /* CruncherPartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338B696B1BE0B8E500BA2B48 /* CruncherPartViewController.xib */; };
+		339D17B31C78486F00D876B6 /* ValueInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D17B21C78486F00D876B6 /* ValueInterfaceController.swift */; };
+		33D077991C255D9800E4CA6F /* CCValueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D077961C2558E500E4CA6F /* CCValueOutput.swift */; };
+		33D30EA61BCDED0F0095A6B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EA51BCDED0F0095A6B5 /* main.m */; };
+		33D30EA91BCDED0F0095A6B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EA81BCDED0F0095A6B5 /* AppDelegate.m */; };
+		33D30EAC1BCDED0F0095A6B5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EAB1BCDED0F0095A6B5 /* MasterViewController.m */; };
+		33D30EAF1BCDED0F0095A6B5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EAE1BCDED0F0095A6B5 /* DetailViewController.m */; };
+		33D30EB21BCDED0F0095A6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D30EB01BCDED0F0095A6B5 /* Main.storyboard */; };
+		33D30EB41BCDED0F0095A6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D30EB31BCDED0F0095A6B5 /* Assets.xcassets */; };
+		33D30EB71BCDED0F0095A6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D30EB51BCDED0F0095A6B5 /* LaunchScreen.storyboard */; };
+		33D30EC41BCDED380095A6B5 /* CruncherCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EC31BCDED380095A6B5 /* CruncherCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30EC81BCDED380095A6B5 /* CruncherCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EC11BCDED380095A6B5 /* CruncherCore.framework */; };
+		33D30EC91BCDED380095A6B5 /* CruncherCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EC11BCDED380095A6B5 /* CruncherCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33D30ED01BCDED550095A6B5 /* CCStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ECE1BCDED550095A6B5 /* CCStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30ED11BCDED550095A6B5 /* CCStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ECF1BCDED550095A6B5 /* CCStorage.m */; };
+		33D30ED81BCDEED20095A6B5 /* CCKeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ED61BCDEED20095A6B5 /* CCKeyValueStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30ED91BCDEED20095A6B5 /* CCKeyValueStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ED71BCDEED20095A6B5 /* CCKeyValueStorage.m */; };
+		33D30EDC1BCDF1180095A6B5 /* CCStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDA1BCDF1180095A6B5 /* CCStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30EDD1BCDF1180095A6B5 /* CCStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDB1BCDF1180095A6B5 /* CCStorageBucket.m */; };
+		33D30EE01BCDF1250095A6B5 /* CCKeyValueStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDE1BCDF1250095A6B5 /* CCKeyValueStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30EE11BCDF1250095A6B5 /* CCKeyValueStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDF1BCDF1250095A6B5 /* CCKeyValueStorageBucket.m */; };
+		33D30EE41BCDF17E0095A6B5 /* CCStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EE21BCDF17E0095A6B5 /* CCStorage.xcdatamodeld */; };
+		33D30EE71BCDFA940095A6B5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EE61BCDFA940095A6B5 /* CoreData.framework */; };
+		33D30F051BCE0A780095A6B5 /* CCStorageBucket_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F031BCE0A780095A6B5 /* CCStorageBucket_Priv.h */; };
+		33D30F0D1BCE36000095A6B5 /* CCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0B1BCE36000095A6B5 /* CCData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30F0E1BCE36000095A6B5 /* CCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F0C1BCE36000095A6B5 /* CCData.m */; };
+		33D30F131BCE3EB00095A6B5 /* CCDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F111BCE3EB00095A6B5 /* CCDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30F141BCE3EB00095A6B5 /* CCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F121BCE3EB00095A6B5 /* CCDataSource.m */; };
+		33D30F181BCE408B0095A6B5 /* CCXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F161BCE408B0095A6B5 /* CCXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30F191BCE408B0095A6B5 /* CCXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F171BCE408B0095A6B5 /* CCXMLParser.m */; };
+		33D30F1D1BCE41F40095A6B5 /* CCNetworkSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F1B1BCE41F40095A6B5 /* CCNetworkSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30F1E1BCE41F40095A6B5 /* CCNetworkSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F1C1BCE41F40095A6B5 /* CCNetworkSource.m */; };
+		33D30F241BCE4DC10095A6B5 /* CCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F221BCE4DC10095A6B5 /* CCProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D30F251BCE4DC10095A6B5 /* CCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F231BCE4DC10095A6B5 /* CCProcessor.m */; };
+		33D4B1201C2E2E91007A0E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4B11F1C2E2E91007A0E1F /* AppDelegate.swift */; };
+		33D4B1221C2E2E91007A0E1F /* Assets_OSX.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D4B1211C2E2E91007A0E1F /* Assets_OSX.xcassets */; };
+		33D4B1251C2E2E91007A0E1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D4B1231C2E2E91007A0E1F /* MainMenu.xib */; };
+		33D4B12D1C2E2EA5007A0E1F /* CCMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AF1C26B209003F1235 /* CCMonitor.swift */; };
+		33D4B12E1C2E2EA5007A0E1F /* CCStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDB1BCDF1180095A6B5 /* CCStorageBucket.m */; };
+		33D4B12F1C2E2EA5007A0E1F /* CCValueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D077961C2558E500E4CA6F /* CCValueOutput.swift */; };
+		33D4B1301C2E2EA5007A0E1F /* CCNPWeightedSummation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CA71C202B6400FE40CF /* CCNPWeightedSummation.swift */; };
+		33D4B1331C2E2EA5007A0E1F /* Data+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7541C29048000E311A0 /* Data+CoreDataProperties.m */; };
+		33D4B1341C2E2EA5007A0E1F /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7561C29048000E311A0 /* Data.m */; };
+		33D4B1351C2E2EA5007A0E1F /* CCStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ECF1BCDED550095A6B5 /* CCStorage.m */; };
+		33D4B1361C2E2EA5007A0E1F /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7521C29048000E311A0 /* Bucket.m */; };
+		33D4B1371C2E2EA5007A0E1F /* CCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AB1C26A6C3003F1235 /* CCConstant.swift */; };
+		33D4B1381C2E2EA5007A0E1F /* CCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F0C1BCE36000095A6B5 /* CCData.m */; };
+		33D4B1391C2E2EA5007A0E1F /* CCStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EE21BCDF17E0095A6B5 /* CCStorage.xcdatamodeld */; };
+		33D4B13A1C2E2EA5007A0E1F /* CCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F231BCE4DC10095A6B5 /* CCProcessor.m */; };
+		33D4B13B1C2E2EA5007A0E1F /* CCKeyValueStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30ED71BCDEED20095A6B5 /* CCKeyValueStorage.m */; };
+		33D4B13C1C2E2EA5007A0E1F /* Bucket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7501C29048000E311A0 /* Bucket+CoreDataProperties.m */; };
+		33D4B13E1C2E2EA5007A0E1F /* CCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33974CAA1C2136C000FE40CF /* CCConverter.swift */; };
+		33D4B13F1C2E2EA5007A0E1F /* Storage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7581C29048000E311A0 /* Storage+CoreDataProperties.m */; };
+		33D4B1401C2E2EA5007A0E1F /* CCConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8BE1C251C3D00FBC24C /* CCConsoleLog.swift */; };
+		33D4B1411C2E2EA5007A0E1F /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330A75A1C29048000E311A0 /* Storage.m */; };
+		33D4B1421C2E2EA5007A0E1F /* CCKeyValueStorageBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30EDF1BCDF1250095A6B5 /* CCKeyValueStorageBucket.m */; };
+		33D4B1431C2E2EA5007A0E1F /* CCXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F171BCE408B0095A6B5 /* CCXMLParser.m */; };
+		33D4B1451C2E2EA5007A0E1F /* CCHTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3375ECFF1C223FCD00B9D103 /* CCHTMLParser.swift */; };
+		33D4B1461C2E2EA5007A0E1F /* CCNetworkSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F1C1BCE41F40095A6B5 /* CCNetworkSource.m */; };
+		33D4B1471C2E2EA5007A0E1F /* CCJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331E8AE1C24F78B00FBC24C /* CCJSONParser.swift */; };
+		33D4B1481C2E2EA5007A0E1F /* CCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D30F121BCE3EB00095A6B5 /* CCDataSource.m */; };
+		33D4B1491C2E2EA5007A0E1F /* CCProcessorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3330A7811C2A527700E311A0 /* CCProcessorContainer.swift */; };
+		33D4B14C1C2E2EA5007A0E1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3330A7771C2A155A00E311A0 /* Security.framework */; };
+		33D4B14E1C2E2EA5007A0E1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D30EE61BCDFA940095A6B5 /* CoreData.framework */; };
+		33D4B1521C2E2EA5007A0E1F /* CCStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ECE1BCDED550095A6B5 /* CCStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B1531C2E2EA5007A0E1F /* Bucket+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A74F1C29048000E311A0 /* Bucket+CoreDataProperties.h */; };
+		33D4B1541C2E2EA5007A0E1F /* CCStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDA1BCDF1180095A6B5 /* CCStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B1551C2E2EA5007A0E1F /* Data+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7531C29048000E311A0 /* Data+CoreDataProperties.h */; };
+		33D4B1571C2E2EA5007A0E1F /* CCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F221BCE4DC10095A6B5 /* CCProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B1581C2E2EA5007A0E1F /* CCXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F161BCE408B0095A6B5 /* CCXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B1591C2E2EA5007A0E1F /* CCNetworkSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F1B1BCE41F40095A6B5 /* CCNetworkSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B15A1C2E2EA5007A0E1F /* CCDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F111BCE3EB00095A6B5 /* CCDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B15B1C2E2EA5007A0E1F /* CCKeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30ED61BCDEED20095A6B5 /* CCKeyValueStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B15C1C2E2EA5007A0E1F /* Storage+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7571C29048000E311A0 /* Storage+CoreDataProperties.h */; };
+		33D4B15D1C2E2EA5007A0E1F /* CCKeyValueStorageBucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EDE1BCDF1250095A6B5 /* CCKeyValueStorageBucket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B15E1C2E2EA5007A0E1F /* Bucket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7511C29048000E311A0 /* Bucket.h */; };
+		33D4B15F1C2E2EA5007A0E1F /* CCData.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0B1BCE36000095A6B5 /* CCData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B1601C2E2EA5007A0E1F /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7591C29048000E311A0 /* Storage.h */; };
+		33D4B1611C2E2EA5007A0E1F /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 3330A7551C29048000E311A0 /* Data.h */; };
+		33D4B1621C2E2EA5007A0E1F /* CCData_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0F1BCE39F60095A6B5 /* CCData_Priv.h */; };
+		33D4B1631C2E2EA5007A0E1F /* CCStorageBucket_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F031BCE0A780095A6B5 /* CCStorageBucket_Priv.h */; };
+		33D4B16F1C2E30F7007A0E1F /* CCWatchTextComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3378CE7A1C254B8500B9D977 /* CCWatchTextComplication.swift */; };
+		33D4B1711C2E314E007A0E1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1701C2E314E007A0E1F /* Cocoa.framework */; };
+		33D4B1EF1C2E406A007A0E1F /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E21C2E4049007A0E1F /* Kanna.framework */; };
+		33D4B1F01C2E408C007A0E1F /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E81C2E4049007A0E1F /* Kanna.framework */; };
+		33D4B1F11C2E40A6007A0E1F /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E41C2E4049007A0E1F /* Kanna.framework */; };
+		33D4B1FA1C2E40D1007A0E1F /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E41C2E4049007A0E1F /* Kanna.framework */; };
+		33D4B1FB1C2E40D1007A0E1F /* Kanna.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B1E41C2E4049007A0E1F /* Kanna.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33D4B2001C2E4BC0007A0E1F /* BCItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4B1FF1C2E4BC0007A0E1F /* BCItem.swift */; };
+		33D4B2011C2E4D8B007A0E1F /* StockPriceCheck.container in Resources */ = {isa = PBXBuildFile; fileRef = 337FE4A71C2D2DF800DAADBB /* StockPriceCheck.container */; };
+		33D4B2031C2E5323007A0E1F /* CruncherCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EC31BCDED380095A6B5 /* CruncherCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B2041C2E5970007A0E1F /* CruncherCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30EC31BCDED380095A6B5 /* CruncherCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D4B20A1C2E9420007A0E1F /* DeviceConsolidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4B2071C2E9420007A0E1F /* DeviceConsolidate.swift */; };
+		33D4B20F1C2E9455007A0E1F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D4B20B1C2E9435007A0E1F /* CloudKit.framework */; };
+		33DF00AD1C26AABC003F1235 /* CCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AB1C26A6C3003F1235 /* CCConstant.swift */; };
+		33DF00AE1C26AABC003F1235 /* CCConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AB1C26A6C3003F1235 /* CCConstant.swift */; };
+		33DF00B01C26B209003F1235 /* CCMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AF1C26B209003F1235 /* CCMonitor.swift */; };
+		33DF00B11C26B209003F1235 /* CCMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF00AF1C26B209003F1235 /* CCMonitor.swift */; };
+		33DF00B21C27C429003F1235 /* CCData_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0F1BCE39F60095A6B5 /* CCData_Priv.h */; };
+		33DF00B31C27C429003F1235 /* CCData_Priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D30F0F1BCE39F60095A6B5 /* CCData_Priv.h */; };
+		33DF64071C92CDB900C22DD4 /* SleepDerviation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF64061C92CDB900C22DD4 /* SleepDerviation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		333B4D371C3B985200678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333B4D341C3B985200678663;
+			remoteInfo = "Wearable Cruncher Extension";
+		};
+		333B4D431C3B985200678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333B4D281C3B985200678663;
+			remoteInfo = "Wearable Cruncher";
+		};
+		333B4D511C3B988600678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E4F86B41BD90AE1008EF835;
+			remoteInfo = Kanna_watchOS;
+		};
+		333B4D551C3B988600678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3378CE351C25435600B9D977;
+			remoteInfo = CruncherCore_WatchOS;
+		};
+		333B4D5C1C3B989900678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EAFA0D71B6039D5001F3D84;
+			remoteInfo = Kanna_iOS;
+		};
+		333B4D601C3B989900678663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D30EC01BCDED380095A6B5;
+			remoteInfo = CruncherCore_iOS;
+		};
+		333CFAC71C42210600F7DF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D4B12A1C2E2EA5007A0E1F;
+			remoteInfo = CruncherCore_OSX;
+		};
+		337A2CC01C5AB68F00051B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337A2CB81C5AB68D00051B24 /* UCIShuttle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 337A2CA11C5AB68D00051B24;
+			remoteInfo = UCIShuttle;
+		};
+		33D30EC61BCDED380095A6B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D30EC01BCDED380095A6B5;
+			remoteInfo = "Cruncher Core";
+		};
+		33D4B16D1C2E2F7B007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D30E971BCDECF10095A6B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D4B12A1C2E2EA5007A0E1F;
+			remoteInfo = CruncherCore_OSX;
+		};
+		33D4B1E11C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EAFA0D81B6039D5001F3D84;
+			remoteInfo = Kanna_iOS;
+		};
+		33D4B1E31C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EBA8A6B1B6632E800226B9C;
+			remoteInfo = Kanna_OSX;
+		};
+		33D4B1E51C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EC47DAB1BC9729F00647902;
+			remoteInfo = Kanna_tvOS;
+		};
+		33D4B1E71C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E4F86B51BD90AE1008EF835;
+			remoteInfo = Kanna_watchOS;
+		};
+		33D4B1E91C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EAFA0E31B6039D5001F3D84;
+			remoteInfo = KannaTests;
+		};
+		33D4B1EB1C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1E206B841B665E6D00441E12;
+			remoteInfo = "Kanna_OSX Tests";
+		};
+		33D4B1ED1C2E4049007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EC47DB41BC9729F00647902;
+			remoteInfo = "Kanna_tvOS Tests";
+		};
+		33D4B1FC1C2E40D1007A0E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EBA8A6A1B6632E800226B9C;
+			remoteInfo = Kanna_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		333B4D491C3B985200678663 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				333B4D361C3B985200678663 /* Wearable Cruncher Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D4D1C3B985200678663 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				333B4D451C3B985200678663 /* Wearable Cruncher.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D571C3B988600678663 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				333B4D501C3B988600678663 /* Kanna.framework in Embed Frameworks */,
+				333B4D541C3B988600678663 /* CruncherCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D621C3B989900678663 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				333B4D5B1C3B989900678663 /* Kanna.framework in Embed Frameworks */,
+				333B4D5F1C3B989900678663 /* CruncherCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30ECD1BCDED380095A6B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33D30EC91BCDED380095A6B5 /* CruncherCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B1FE1C2E40D1007A0E1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33D4B1FB1C2E40D1007A0E1F /* Kanna.framework in Embed Frameworks */,
+				3355769F1C3C87BA000ED1CE /* CruncherCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		330A8DEA1CAE0FFD00EA9D10 /* Mobile Cruncher copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mobile Cruncher copy-Info.plist"; path = "/Users/waimanchan/Documents/Data Crunchers/Mobile Cruncher copy-Info.plist"; sourceTree = "<absolute>"; };
+		3314092D1CA8F89B0047F6A8 /* ComplicationSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationSetting.swift; sourceTree = "<group>"; };
+		331409C41CAA7A630047F6A8 /* CruncherCore-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CruncherCore-Bridge.h"; sourceTree = "<group>"; };
+		331E855A1C575E600016B21D /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		332622B71C6734BB00A79613 /* ProtocolCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolCipher.swift; sourceTree = "<group>"; };
+		3330A74F1C29048000E311A0 /* Bucket+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bucket+CoreDataProperties.h"; path = "Cruncher Core/Bucket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3330A7501C29048000E311A0 /* Bucket+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Bucket+CoreDataProperties.m"; path = "Cruncher Core/Bucket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3330A7511C29048000E311A0 /* Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bucket.h; path = "Cruncher Core/Bucket.h"; sourceTree = "<group>"; };
+		3330A7521C29048000E311A0 /* Bucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bucket.m; path = "Cruncher Core/Bucket.m"; sourceTree = "<group>"; };
+		3330A7531C29048000E311A0 /* Data+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Data+CoreDataProperties.h"; path = "Cruncher Core/Data+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3330A7541C29048000E311A0 /* Data+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Data+CoreDataProperties.m"; path = "Cruncher Core/Data+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3330A7551C29048000E311A0 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = "Cruncher Core/Data.h"; sourceTree = "<group>"; };
+		3330A7561C29048000E311A0 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = "Cruncher Core/Data.m"; sourceTree = "<group>"; };
+		3330A7571C29048000E311A0 /* Storage+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Storage+CoreDataProperties.h"; path = "Cruncher Core/Storage+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3330A7581C29048000E311A0 /* Storage+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Storage+CoreDataProperties.m"; path = "Cruncher Core/Storage+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3330A7591C29048000E311A0 /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Storage.h; path = "Cruncher Core/Storage.h"; sourceTree = "<group>"; };
+		3330A75A1C29048000E311A0 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Storage.m; path = "Cruncher Core/Storage.m"; sourceTree = "<group>"; };
+		3330A7771C2A155A00E311A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3330A7791C2A156500E311A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3330A7811C2A527700E311A0 /* CCProcessorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCProcessorContainer.swift; sourceTree = "<group>"; };
+		3331E8AE1C24F78B00FBC24C /* CCJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCJSONParser.swift; sourceTree = "<group>"; };
+		3331E8B41C25160900FBC24C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3331E8BE1C251C3D00FBC24C /* CCConsoleLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCConsoleLog.swift; sourceTree = "<group>"; };
+		3334B6791C5814C500D0328F /* CCMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMapping.swift; sourceTree = "<group>"; };
+		3339726C1C7450F40010B176 /* watchSyncProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = watchSyncProtocol.swift; path = ../watchSyncProtocol.swift; sourceTree = "<group>"; };
+		333B4D131C3B982700678663 /* Mobile Cruncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Cruncher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333B4D151C3B982700678663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		333B4D171C3B982700678663 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		333B4D191C3B982700678663 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		333B4D1C1C3B982700678663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		333B4D1E1C3B982700678663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333B4D211C3B982700678663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		333B4D231C3B982700678663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333B4D291C3B985200678663 /* Wearable Cruncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wearable Cruncher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333B4D2C1C3B985200678663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		333B4D2E1C3B985200678663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333B4D301C3B985200678663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333B4D351C3B985200678663 /* Wearable Cruncher Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wearable Cruncher Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333B4D3A1C3B985200678663 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		333B4D3C1C3B985200678663 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		333B4D3E1C3B985200678663 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		333B4D401C3B985200678663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333B4D421C3B985200678663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333B4D581C3B989000678663 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		333B4D641C3B98A800678663 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		333B4D661C3B9B3600678663 /* Mobile Cruncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Mobile Cruncher.entitlements"; path = "Mobile Cruncher/Mobile Cruncher.entitlements"; sourceTree = "<group>"; };
+		333B4D681C3BA64000678663 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		333C520D1C28E7C300013AAD /* StockPriceCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = StockPriceCheck.entitlements; sourceTree = "<group>"; };
+		333CFAC11C42210600F7DF6E /* CruncherCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CruncherCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		333CFAC31C42210600F7DF6E /* CruncherCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruncherCoreTests.swift; sourceTree = "<group>"; };
+		333CFAC51C42210600F7DF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333DBD5A1C6EC10600A5D4EC /* CacheStorageSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheStorageSpace.swift; sourceTree = "<group>"; };
+		333F48561BE9DC4000AAA0CD /* CruncherPortTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CruncherPortTableViewCell.swift; sourceTree = "<group>"; };
+		333F48571BE9DC4000AAA0CD /* CruncherPortTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CruncherPortTableViewCell.xib; sourceTree = "<group>"; };
+		335131AC1C6EE9F60047B025 /* CCStorage v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CCStorage v2.xcdatamodel"; sourceTree = "<group>"; };
+		335131B21C7173400047B025 /* CCStorageContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorageContextManager.h; sourceTree = "<group>"; };
+		335131B31C7173400047B025 /* CCStorageContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStorageContextManager.m; sourceTree = "<group>"; };
+		336D07471C520599002C89A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3375ECFF1C223FCD00B9D103 /* CCHTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCHTMLParser.swift; sourceTree = "<group>"; };
+		3378CE6B1C25435600B9D977 /* CruncherCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CruncherCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3378CE6C1C25435600B9D977 /* CruncherCore copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CruncherCore copy-Info.plist"; path = "/Users/waimanchan/Documents/Data Crunchers/CruncherCore copy-Info.plist"; sourceTree = "<absolute>"; };
+		3378CE7A1C254B8500B9D977 /* CCWatchTextComplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWatchTextComplication.swift; sourceTree = "<group>"; };
+		3378CE7C1C254BB600B9D977 /* ClockKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/ClockKit.framework; sourceTree = DEVELOPER_DIR; };
+		337A2CB81C5AB68D00051B24 /* UCIShuttle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UCIShuttle.xcodeproj; path = UCIShuttle/UCIShuttle.xcodeproj; sourceTree = "<group>"; };
+		337FE4991C2CCE7200DAADBB /* WatchSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		337FE49C1C2CD01E00DAADBB /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		337FE49E1C2CD02900DAADBB /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		337FE4A71C2D2DF800DAADBB /* StockPriceCheck.container */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = StockPriceCheck.container; path = StockPriceCheck/StockPriceCheck.container; sourceTree = "<group>"; };
+		3380D7201C310C0C006A674B /* CCNumberDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNumberDisplay.swift; sourceTree = "<group>"; };
+		3380D7231C320AC2006A674B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3380D7251C320ACC006A674B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3380D7271C320AD3006A674B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3387661C1C377AB1009234F3 /* MainInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInterface.swift; sourceTree = "<group>"; };
+		338766211C3889EC009234F3 /* CKHelperFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKHelperFunction.swift; sourceTree = "<group>"; };
+		338B69691BE0B8E500BA2B48 /* Cruncher Studio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cruncher Studio-Bridging-Header.h"; sourceTree = "<group>"; };
+		338B696A1BE0B8E500BA2B48 /* CruncherPartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CruncherPartViewController.swift; sourceTree = "<group>"; };
+		338B696B1BE0B8E500BA2B48 /* CruncherPartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CruncherPartViewController.xib; sourceTree = "<group>"; };
+		33974CA71C202B6400FE40CF /* CCNPWeightedSummation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNPWeightedSummation.swift; sourceTree = "<group>"; };
+		33974CAA1C2136C000FE40CF /* CCConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCConverter.swift; sourceTree = "<group>"; };
+		33974CC01C216A5700FE40CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33974CC21C216A5700FE40CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33974CC51C216A5700FE40CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33974CC71C216A5700FE40CF /* Assets_iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets_iOS.xcassets; sourceTree = "<group>"; };
+		33974CCA1C216A5700FE40CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33974CCC1C216A5700FE40CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339D17B21C78486F00D876B6 /* ValueInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueInterfaceController.swift; sourceTree = "<group>"; };
+		33D077941C2558AA00E4CA6F /* ValueCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCalculation.swift; sourceTree = "<group>"; };
+		33D077961C2558E500E4CA6F /* CCValueOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCValueOutput.swift; sourceTree = "<group>"; };
+		33D0779F1C255F2200E4CA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		33D077A11C255F2200E4CA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D077A31C255F2200E4CA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D077AD1C255F2200E4CA6F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		33D077AF1C255F2200E4CA6F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		33D077B11C255F2200E4CA6F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		33D077B31C255F2200E4CA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D077B51C255F2200E4CA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D30EA11BCDED0F0095A6B5 /* Cruncher Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cruncher Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D30EA51BCDED0F0095A6B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33D30EA71BCDED0F0095A6B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33D30EA81BCDED0F0095A6B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33D30EAA1BCDED0F0095A6B5 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		33D30EAB1BCDED0F0095A6B5 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		33D30EAD1BCDED0F0095A6B5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		33D30EAE1BCDED0F0095A6B5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		33D30EB11BCDED0F0095A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33D30EB31BCDED0F0095A6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D30EB61BCDED0F0095A6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33D30EB81BCDED0F0095A6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D30EC11BCDED380095A6B5 /* CruncherCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CruncherCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D30EC31BCDED380095A6B5 /* CruncherCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CruncherCore.h; sourceTree = "<group>"; };
+		33D30EC51BCDED380095A6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D30ECE1BCDED550095A6B5 /* CCStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorage.h; sourceTree = "<group>"; };
+		33D30ECF1BCDED550095A6B5 /* CCStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStorage.m; sourceTree = "<group>"; };
+		33D30ED61BCDEED20095A6B5 /* CCKeyValueStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyValueStorage.h; sourceTree = "<group>"; };
+		33D30ED71BCDEED20095A6B5 /* CCKeyValueStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKeyValueStorage.m; sourceTree = "<group>"; };
+		33D30EDA1BCDF1180095A6B5 /* CCStorageBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorageBucket.h; sourceTree = "<group>"; };
+		33D30EDB1BCDF1180095A6B5 /* CCStorageBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCStorageBucket.m; sourceTree = "<group>"; };
+		33D30EDE1BCDF1250095A6B5 /* CCKeyValueStorageBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyValueStorageBucket.h; sourceTree = "<group>"; };
+		33D30EDF1BCDF1250095A6B5 /* CCKeyValueStorageBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKeyValueStorageBucket.m; sourceTree = "<group>"; };
+		33D30EE31BCDF17E0095A6B5 /* CCStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCStorage.xcdatamodel; sourceTree = "<group>"; };
+		33D30EE51BCDFA000095A6B5 /* CCStorage_Priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCStorage_Priv.h; sourceTree = "<group>"; };
+		33D30EE61BCDFA940095A6B5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		33D30EE81BCE00000095A6B5 /* Cruncher Studio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cruncher Studio.entitlements"; sourceTree = "<group>"; };
+		33D30F031BCE0A780095A6B5 /* CCStorageBucket_Priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorageBucket_Priv.h; sourceTree = "<group>"; };
+		33D30F0B1BCE36000095A6B5 /* CCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCData.h; sourceTree = "<group>"; };
+		33D30F0C1BCE36000095A6B5 /* CCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCData.m; sourceTree = "<group>"; };
+		33D30F0F1BCE39F60095A6B5 /* CCData_Priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCData_Priv.h; sourceTree = "<group>"; };
+		33D30F111BCE3EB00095A6B5 /* CCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDataSource.h; sourceTree = "<group>"; };
+		33D30F121BCE3EB00095A6B5 /* CCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDataSource.m; sourceTree = "<group>"; };
+		33D30F161BCE408B0095A6B5 /* CCXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCXMLParser.h; sourceTree = "<group>"; };
+		33D30F171BCE408B0095A6B5 /* CCXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCXMLParser.m; sourceTree = "<group>"; };
+		33D30F1B1BCE41F40095A6B5 /* CCNetworkSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNetworkSource.h; sourceTree = "<group>"; };
+		33D30F1C1BCE41F40095A6B5 /* CCNetworkSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNetworkSource.m; sourceTree = "<group>"; };
+		33D30F221BCE4DC10095A6B5 /* CCProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProcessor.h; sourceTree = "<group>"; };
+		33D30F231BCE4DC10095A6B5 /* CCProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCProcessor.m; sourceTree = "<group>"; };
+		33D4B1111C2DFBFF007A0E1F /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = "build/Debug-iphoneos/Kanna.framework"; sourceTree = "<group>"; };
+		33D4B1141C2DFC22007A0E1F /* Kanna_Watch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna_Watch.framework; path = "build/Debug-watchos/Kanna_Watch.framework"; sourceTree = "<group>"; };
+		33D4B1171C2E0578007A0E1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		33D4B11D1C2E2E91007A0E1F /* Background Cruncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Background Cruncher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D4B11F1C2E2E91007A0E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33D4B1211C2E2E91007A0E1F /* Assets_OSX.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets_OSX.xcassets; sourceTree = "<group>"; };
+		33D4B1241C2E2E91007A0E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33D4B1261C2E2E91007A0E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CruncherCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D4B16B1C2E2EA5007A0E1F /* CruncherCore_iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CruncherCore_iOS copy-Info.plist"; path = "/Users/waimanchan/Documents/Data Crunchers/CruncherCore_iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		33D4B1701C2E314E007A0E1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		33D4B1861C2E3458007A0E1F /* Kanna_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna_Mac.framework; path = Pods/../build/Debug/Kanna_Mac.framework; sourceTree = "<group>"; };
+		33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kanna.xcodeproj; path = Kanna/Kanna.xcodeproj; sourceTree = "<group>"; };
+		33D4B1FF1C2E4BC0007A0E1F /* BCItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCItem.swift; sourceTree = "<group>"; };
+		33D4B2051C2E7A5D007A0E1F /* Background Cruncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Background Cruncher.entitlements"; sourceTree = "<group>"; };
+		33D4B2071C2E9420007A0E1F /* DeviceConsolidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConsolidate.swift; sourceTree = "<group>"; };
+		33D4B20B1C2E9435007A0E1F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		33DF00AB1C26A6C3003F1235 /* CCConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCConstant.swift; sourceTree = "<group>"; };
+		33DF00AF1C26B209003F1235 /* CCMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMonitor.swift; sourceTree = "<group>"; };
+		33DF64041C92CDB800C22DD4 /* Background Cruncher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Background Cruncher-Bridging-Header.h"; sourceTree = "<group>"; };
+		33DF64051C92CDB900C22DD4 /* SleepDerviation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepDerviation.h; sourceTree = "<group>"; };
+		33DF64061C92CDB900C22DD4 /* SleepDerviation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepDerviation.m; sourceTree = "<group>"; };
+		7980EB90F09B0BE1A917B734 /* Pods_CruncherCore_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CruncherCore_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90011F9636ED842C38CCBF7C /* Pods_CruncherCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CruncherCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E57E04430668C55532D781 /* Pods_CruncherCore_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CruncherCore_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		333B4D101C3B982700678663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D651C3B98A800678663 /* CoreData.framework in Frameworks */,
+				333B4D631C3B98A800678663 /* CloudKit.framework in Frameworks */,
+				333B4D5A1C3B989900678663 /* Kanna.framework in Frameworks */,
+				333B4D5E1C3B989900678663 /* CruncherCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D321C3B985200678663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D591C3B989000678663 /* CoreData.framework in Frameworks */,
+				333B4D4F1C3B988600678663 /* Kanna.framework in Frameworks */,
+				333B4D4E1C3B987800678663 /* CruncherCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333CFABE1C42210600F7DF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333CFAC61C42210600F7DF6E /* CruncherCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3378CE4D1C25435600B9D977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3380D7261C320ACC006A674B /* CoreGraphics.framework in Frameworks */,
+				33D4B1F01C2E408C007A0E1F /* Kanna.framework in Frameworks */,
+				337FE49F1C2CD02900DAADBB /* WatchConnectivity.framework in Frameworks */,
+				3330A77A1C2A156500E311A0 /* Security.framework in Frameworks */,
+				3378CE7D1C254BB600B9D977 /* ClockKit.framework in Frameworks */,
+				3378CE501C25435600B9D977 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30E9E1BCDED0F0095A6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D30EC81BCDED380095A6B5 /* CruncherCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30EBD1BCDED380095A6B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3380D7241C320AC2006A674B /* CoreGraphics.framework in Frameworks */,
+				33D4B20F1C2E9455007A0E1F /* CloudKit.framework in Frameworks */,
+				33D4B1EF1C2E406A007A0E1F /* Kanna.framework in Frameworks */,
+				337FE49D1C2CD01E00DAADBB /* WatchConnectivity.framework in Frameworks */,
+				3330A7781C2A155A00E311A0 /* Security.framework in Frameworks */,
+				3331E8B51C25160900FBC24C /* UIKit.framework in Frameworks */,
+				33D30EE71BCDFA940095A6B5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B11A1C2E2E91007A0E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D691C3BA64000678663 /* CloudKit.framework in Frameworks */,
+				3355769E1C3C87BA000ED1CE /* CruncherCore.framework in Frameworks */,
+				33D4B1FA1C2E40D1007A0E1F /* Kanna.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B14A1C2E2EA5007A0E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3380D7281C320AD3006A674B /* CoreGraphics.framework in Frameworks */,
+				33D4B1F11C2E40A6007A0E1F /* Kanna.framework in Frameworks */,
+				33D4B1711C2E314E007A0E1F /* Cocoa.framework in Frameworks */,
+				33D4B14C1C2E2EA5007A0E1F /* Security.framework in Frameworks */,
+				33D4B14E1C2E2EA5007A0E1F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B2E9C381072F6E44C7C4F39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				336D07471C520599002C89A5 /* CoreData.framework */,
+				333B4D681C3BA64000678663 /* CloudKit.framework */,
+				333B4D641C3B98A800678663 /* CoreData.framework */,
+				333B4D581C3B989000678663 /* CoreData.framework */,
+				3380D7271C320AD3006A674B /* CoreGraphics.framework */,
+				3380D7251C320ACC006A674B /* CoreGraphics.framework */,
+				3380D7231C320AC2006A674B /* CoreGraphics.framework */,
+				33D4B20B1C2E9435007A0E1F /* CloudKit.framework */,
+				33D4B1861C2E3458007A0E1F /* Kanna_Mac.framework */,
+				33D4B1701C2E314E007A0E1F /* Cocoa.framework */,
+				33D4B1171C2E0578007A0E1F /* CoreLocation.framework */,
+				33D4B1141C2DFC22007A0E1F /* Kanna_Watch.framework */,
+				33D4B1111C2DFBFF007A0E1F /* Kanna.framework */,
+				33D30EE61BCDFA940095A6B5 /* CoreData.framework */,
+				337FE49E1C2CD02900DAADBB /* WatchConnectivity.framework */,
+				337FE49C1C2CD01E00DAADBB /* WatchConnectivity.framework */,
+				3330A7791C2A156500E311A0 /* Security.framework */,
+				3330A7771C2A155A00E311A0 /* Security.framework */,
+				3378CE7C1C254BB600B9D977 /* ClockKit.framework */,
+				3331E8B41C25160900FBC24C /* UIKit.framework */,
+				90011F9636ED842C38CCBF7C /* Pods_CruncherCore.framework */,
+				D5E57E04430668C55532D781 /* Pods_CruncherCore_WatchOS.framework */,
+				7980EB90F09B0BE1A917B734 /* Pods_CruncherCore_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3331E8AD1C24F76F00FBC24C /* JSON Parser */ = {
+			isa = PBXGroup;
+			children = (
+				3331E8AE1C24F78B00FBC24C /* CCJSONParser.swift */,
+			);
+			name = "JSON Parser";
+			sourceTree = "<group>";
+		};
+		3331E8B71C251BC100FBC24C /* Data Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				3334B6741C5814B100D0328F /* Mapping */,
+				33974CA91C2136B000FE40CF /* Converter */,
+				33D30F201BCE4D4F0095A6B5 /* Parser */,
+				33D30F211BCE4D6D0095A6B5 /* Numerical Processor */,
+			);
+			name = "Data Modifier";
+			sourceTree = "<group>";
+		};
+		3331E8B81C251BD700FBC24C /* Data Output */ = {
+			isa = PBXGroup;
+			children = (
+				3331E8BE1C251C3D00FBC24C /* CCConsoleLog.swift */,
+				3378CE7A1C254B8500B9D977 /* CCWatchTextComplication.swift */,
+				33D077961C2558E500E4CA6F /* CCValueOutput.swift */,
+			);
+			name = "Data Output";
+			sourceTree = "<group>";
+		};
+		3334B6741C5814B100D0328F /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				3334B6791C5814C500D0328F /* CCMapping.swift */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		333B4D091C3B97D500678663 /* Stock Price Project */ = {
+			isa = PBXGroup;
+			children = (
+				33974CBF1C216A5700FE40CF /* StockPriceCheck */,
+				33D0779D1C255F2200E4CA6F /* StockPriceCheckWidget */,
+				33D077AC1C255F2200E4CA6F /* StockPriceCheckWidget Extension */,
+			);
+			name = "Stock Price Project";
+			sourceTree = "<group>";
+		};
+		333B4D0E1C3B97E200678663 /* Mobile Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				333B4D661C3B9B3600678663 /* Mobile Cruncher.entitlements */,
+				333B4D2A1C3B985200678663 /* Wearable Cruncher */,
+				333B4D391C3B985200678663 /* Wearable Cruncher Extension */,
+				333B4D141C3B982700678663 /* Mobile Cruncher */,
+			);
+			name = "Mobile Monitor";
+			sourceTree = "<group>";
+		};
+		333B4D141C3B982700678663 /* Mobile Cruncher */ = {
+			isa = PBXGroup;
+			children = (
+				333B4D151C3B982700678663 /* AppDelegate.swift */,
+				333B4D171C3B982700678663 /* MasterViewController.swift */,
+				333B4D191C3B982700678663 /* DetailViewController.swift */,
+				333B4D1B1C3B982700678663 /* Main.storyboard */,
+				331E855A1C575E600016B21D /* GraphView.swift */,
+				333B4D1E1C3B982700678663 /* Assets.xcassets */,
+				333B4D201C3B982700678663 /* LaunchScreen.storyboard */,
+				333B4D231C3B982700678663 /* Info.plist */,
+			);
+			path = "Mobile Cruncher";
+			sourceTree = "<group>";
+		};
+		333B4D2A1C3B985200678663 /* Wearable Cruncher */ = {
+			isa = PBXGroup;
+			children = (
+				333B4D2B1C3B985200678663 /* Interface.storyboard */,
+				333B4D2E1C3B985200678663 /* Assets.xcassets */,
+				333B4D301C3B985200678663 /* Info.plist */,
+			);
+			path = "Wearable Cruncher";
+			sourceTree = "<group>";
+		};
+		333B4D391C3B985200678663 /* Wearable Cruncher Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3314092D1CA8F89B0047F6A8 /* ComplicationSetting.swift */,
+				333B4D3A1C3B985200678663 /* InterfaceController.swift */,
+				339D17B21C78486F00D876B6 /* ValueInterfaceController.swift */,
+				333B4D3C1C3B985200678663 /* ExtensionDelegate.swift */,
+				333B4D3E1C3B985200678663 /* ComplicationController.swift */,
+				333B4D401C3B985200678663 /* Assets.xcassets */,
+				333B4D421C3B985200678663 /* Info.plist */,
+			);
+			path = "Wearable Cruncher Extension";
+			sourceTree = "<group>";
+		};
+		333CFAC21C42210600F7DF6E /* CruncherCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				333CFAC31C42210600F7DF6E /* CruncherCoreTests.swift */,
+				333CFAC51C42210600F7DF6E /* Info.plist */,
+			);
+			name = CruncherCoreTests;
+			path = ../CruncherCoreTests;
+			sourceTree = "<group>";
+		};
+		333DBD591C6EC0F400A5D4EC /* Cache DB */ = {
+			isa = PBXGroup;
+			children = (
+				333DBD5A1C6EC10600A5D4EC /* CacheStorageSpace.swift */,
+			);
+			name = "Cache DB";
+			sourceTree = "<group>";
+		};
+		3375ECFE1C223FBB00B9D103 /* HTML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				3375ECFF1C223FCD00B9D103 /* CCHTMLParser.swift */,
+			);
+			name = "HTML Parser";
+			sourceTree = "<group>";
+		};
+		337A2CB91C5AB68D00051B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				337A2CC11C5AB68F00051B24 /* UCIShuttle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		337FE4961C2CCE3700DAADBB /* Backbone */ = {
+			isa = PBXGroup;
+			children = (
+				332622B71C6734BB00A79613 /* ProtocolCipher.swift */,
+				3339726C1C7450F40010B176 /* watchSyncProtocol.swift */,
+				338766201C3889D8009234F3 /* CloudKit */,
+				337FE4981C2CCE4800DAADBB /* Apple Watch */,
+				337FE4971C2CCE3F00DAADBB /* Storage */,
+			);
+			name = Backbone;
+			sourceTree = "<group>";
+		};
+		337FE4971C2CCE3F00DAADBB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F011BCE02850095A6B5 /* CoreData */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		337FE4981C2CCE4800DAADBB /* Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				337FE4991C2CCE7200DAADBB /* WatchSession.swift */,
+			);
+			name = "Apple Watch";
+			sourceTree = "<group>";
+		};
+		3380D71F1C310BEB006A674B /* Monitor Display */ = {
+			isa = PBXGroup;
+			children = (
+				3380D7201C310C0C006A674B /* CCNumberDisplay.swift */,
+			);
+			name = "Monitor Display";
+			sourceTree = "<group>";
+		};
+		338766201C3889D8009234F3 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				338766211C3889EC009234F3 /* CKHelperFunction.swift */,
+			);
+			name = CloudKit;
+			sourceTree = "<group>";
+		};
+		338B69681BE0B8C200BA2B48 /* Cruncher Part View */ = {
+			isa = PBXGroup;
+			children = (
+				333F48561BE9DC4000AAA0CD /* CruncherPortTableViewCell.swift */,
+				333F48571BE9DC4000AAA0CD /* CruncherPortTableViewCell.xib */,
+				338B696A1BE0B8E500BA2B48 /* CruncherPartViewController.swift */,
+				338B696B1BE0B8E500BA2B48 /* CruncherPartViewController.xib */,
+				338B69691BE0B8E500BA2B48 /* Cruncher Studio-Bridging-Header.h */,
+			);
+			name = "Cruncher Part View";
+			sourceTree = "<group>";
+		};
+		33974CA91C2136B000FE40CF /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				33974CAA1C2136C000FE40CF /* CCConverter.swift */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		33974CBF1C216A5700FE40CF /* StockPriceCheck */ = {
+			isa = PBXGroup;
+			children = (
+				333C520D1C28E7C300013AAD /* StockPriceCheck.entitlements */,
+				33974CC01C216A5700FE40CF /* AppDelegate.swift */,
+				33974CC21C216A5700FE40CF /* ViewController.swift */,
+				33D077941C2558AA00E4CA6F /* ValueCalculation.swift */,
+				33974CC41C216A5700FE40CF /* Main.storyboard */,
+				33974CC71C216A5700FE40CF /* Assets_iOS.xcassets */,
+				33974CC91C216A5700FE40CF /* LaunchScreen.storyboard */,
+				33974CCC1C216A5700FE40CF /* Info.plist */,
+			);
+			path = StockPriceCheck;
+			sourceTree = "<group>";
+		};
+		33D0779D1C255F2200E4CA6F /* StockPriceCheckWidget */ = {
+			isa = PBXGroup;
+			children = (
+				33D0779E1C255F2200E4CA6F /* Interface.storyboard */,
+				33D077A11C255F2200E4CA6F /* Assets.xcassets */,
+				33D077A31C255F2200E4CA6F /* Info.plist */,
+			);
+			path = StockPriceCheckWidget;
+			sourceTree = "<group>";
+		};
+		33D077AC1C255F2200E4CA6F /* StockPriceCheckWidget Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33D077AD1C255F2200E4CA6F /* InterfaceController.swift */,
+				33D077AF1C255F2200E4CA6F /* ExtensionDelegate.swift */,
+				33D077B11C255F2200E4CA6F /* ComplicationController.swift */,
+				33D077B31C255F2200E4CA6F /* Assets.xcassets */,
+				33D077B51C255F2200E4CA6F /* Info.plist */,
+			);
+			path = "StockPriceCheckWidget Extension";
+			sourceTree = "<group>";
+		};
+		33D30E961BCDECF10095A6B5 = {
+			isa = PBXGroup;
+			children = (
+				333B4D091C3B97D500678663 /* Stock Price Project */,
+				337A2CB81C5AB68D00051B24 /* UCIShuttle.xcodeproj */,
+				337FE4A71C2D2DF800DAADBB /* StockPriceCheck.container */,
+				33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */,
+				33D30EA31BCDED0F0095A6B5 /* Cruncher Studio */,
+				33D30EC21BCDED380095A6B5 /* Cruncher Core */,
+				333B4D0E1C3B97E200678663 /* Mobile Monitor */,
+				33D4B11E1C2E2E91007A0E1F /* Background Cruncher */,
+				33D30EA21BCDED0F0095A6B5 /* Products */,
+				0B2E9C381072F6E44C7C4F39 /* Frameworks */,
+				330A8DEA1CAE0FFD00EA9D10 /* Mobile Cruncher copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		33D30EA21BCDED0F0095A6B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D30EA11BCDED0F0095A6B5 /* Cruncher Studio.app */,
+				33D30EC11BCDED380095A6B5 /* CruncherCore.framework */,
+				3378CE6B1C25435600B9D977 /* CruncherCore.framework */,
+				33D4B11D1C2E2E91007A0E1F /* Background Cruncher.app */,
+				33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */,
+				333B4D131C3B982700678663 /* Mobile Cruncher.app */,
+				333B4D291C3B985200678663 /* Wearable Cruncher.app */,
+				333B4D351C3B985200678663 /* Wearable Cruncher Extension.appex */,
+				333CFAC11C42210600F7DF6E /* CruncherCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D30EA31BCDED0F0095A6B5 /* Cruncher Studio */ = {
+			isa = PBXGroup;
+			children = (
+				338B69681BE0B8C200BA2B48 /* Cruncher Part View */,
+				33D30EE81BCE00000095A6B5 /* Cruncher Studio.entitlements */,
+				33D30EA71BCDED0F0095A6B5 /* AppDelegate.h */,
+				33D30EA81BCDED0F0095A6B5 /* AppDelegate.m */,
+				33D30EAA1BCDED0F0095A6B5 /* MasterViewController.h */,
+				33D30EAB1BCDED0F0095A6B5 /* MasterViewController.m */,
+				33D30EAD1BCDED0F0095A6B5 /* DetailViewController.h */,
+				33D30EAE1BCDED0F0095A6B5 /* DetailViewController.m */,
+				33D30EB01BCDED0F0095A6B5 /* Main.storyboard */,
+				33D30EB31BCDED0F0095A6B5 /* Assets.xcassets */,
+				33D30EB51BCDED0F0095A6B5 /* LaunchScreen.storyboard */,
+				33D30EB81BCDED0F0095A6B5 /* Info.plist */,
+				33D30EA41BCDED0F0095A6B5 /* Supporting Files */,
+			);
+			path = "Cruncher Studio";
+			sourceTree = "<group>";
+		};
+		33D30EA41BCDED0F0095A6B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33D30EA51BCDED0F0095A6B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33D30EC21BCDED380095A6B5 /* Cruncher Core */ = {
+			isa = PBXGroup;
+			children = (
+				331409C41CAA7A630047F6A8 /* CruncherCore-Bridge.h */,
+				3387661C1C377AB1009234F3 /* MainInterface.swift */,
+				3378CE6C1C25435600B9D977 /* CruncherCore copy-Info.plist */,
+				33D4B16B1C2E2EA5007A0E1F /* CruncherCore_iOS copy-Info.plist */,
+				337FE4961C2CCE3700DAADBB /* Backbone */,
+				333CFAC21C42210600F7DF6E /* CruncherCoreTests */,
+				3330A7811C2A527700E311A0 /* CCProcessorContainer.swift */,
+				33D30F021BCE0A3C0095A6B5 /* Storage */,
+				33D30F1A1BCE41CF0095A6B5 /* Processor */,
+				33D30EC31BCDED380095A6B5 /* CruncherCore.h */,
+				33D30EC51BCDED380095A6B5 /* Info.plist */,
+			);
+			path = "Cruncher Core";
+			sourceTree = "<group>";
+		};
+		33D30F011BCE02850095A6B5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3330A74F1C29048000E311A0 /* Bucket+CoreDataProperties.h */,
+				3330A7501C29048000E311A0 /* Bucket+CoreDataProperties.m */,
+				3330A7511C29048000E311A0 /* Bucket.h */,
+				3330A7521C29048000E311A0 /* Bucket.m */,
+				3330A7531C29048000E311A0 /* Data+CoreDataProperties.h */,
+				3330A7541C29048000E311A0 /* Data+CoreDataProperties.m */,
+				3330A7551C29048000E311A0 /* Data.h */,
+				3330A7561C29048000E311A0 /* Data.m */,
+				3330A7571C29048000E311A0 /* Storage+CoreDataProperties.h */,
+				3330A7581C29048000E311A0 /* Storage+CoreDataProperties.m */,
+				3330A7591C29048000E311A0 /* Storage.h */,
+				3330A75A1C29048000E311A0 /* Storage.m */,
+				33D30EE21BCDF17E0095A6B5 /* CCStorage.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		33D30F021BCE0A3C0095A6B5 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				333DBD591C6EC0F400A5D4EC /* Cache DB */,
+				33D4B2061C2E93EE007A0E1F /* Devices Merger */,
+				33D30F0A1BCE35ED0095A6B5 /* Data */,
+				33D30F071BCE0A850095A6B5 /* Bucket */,
+				33D30F091BCE35CA0095A6B5 /* Storage Space */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		33D30F071BCE0A850095A6B5 /* Bucket */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F031BCE0A780095A6B5 /* CCStorageBucket_Priv.h */,
+				33D30EDA1BCDF1180095A6B5 /* CCStorageBucket.h */,
+				33D30EDB1BCDF1180095A6B5 /* CCStorageBucket.m */,
+				33D30EDE1BCDF1250095A6B5 /* CCKeyValueStorageBucket.h */,
+				33D30EDF1BCDF1250095A6B5 /* CCKeyValueStorageBucket.m */,
+			);
+			name = Bucket;
+			sourceTree = "<group>";
+		};
+		33D30F091BCE35CA0095A6B5 /* Storage Space */ = {
+			isa = PBXGroup;
+			children = (
+				335131B21C7173400047B025 /* CCStorageContextManager.h */,
+				335131B31C7173400047B025 /* CCStorageContextManager.m */,
+				33D30ECE1BCDED550095A6B5 /* CCStorage.h */,
+				33D30EE51BCDFA000095A6B5 /* CCStorage_Priv.h */,
+				33D30ECF1BCDED550095A6B5 /* CCStorage.m */,
+				33D30ED61BCDEED20095A6B5 /* CCKeyValueStorage.h */,
+				33D30ED71BCDEED20095A6B5 /* CCKeyValueStorage.m */,
+			);
+			name = "Storage Space";
+			sourceTree = "<group>";
+		};
+		33D30F0A1BCE35ED0095A6B5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F0B1BCE36000095A6B5 /* CCData.h */,
+				33D30F0C1BCE36000095A6B5 /* CCData.m */,
+				33D30F0F1BCE39F60095A6B5 /* CCData_Priv.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		33D30F101BCE3E8A0095A6B5 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F111BCE3EB00095A6B5 /* CCDataSource.h */,
+				33D30F121BCE3EB00095A6B5 /* CCDataSource.m */,
+				33D30F1B1BCE41F40095A6B5 /* CCNetworkSource.h */,
+				33D30F1C1BCE41F40095A6B5 /* CCNetworkSource.m */,
+			);
+			name = "Data Source";
+			sourceTree = "<group>";
+		};
+		33D30F151BCE40770095A6B5 /* XML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F161BCE408B0095A6B5 /* CCXMLParser.h */,
+				33D30F171BCE408B0095A6B5 /* CCXMLParser.m */,
+			);
+			name = "XML Parser";
+			sourceTree = "<group>";
+		};
+		33D30F1A1BCE41CF0095A6B5 /* Processor */ = {
+			isa = PBXGroup;
+			children = (
+				33D30F221BCE4DC10095A6B5 /* CCProcessor.h */,
+				33D30F231BCE4DC10095A6B5 /* CCProcessor.m */,
+				33DF00AA1C26A6A1003F1235 /* Constant */,
+				33DF00A91C26A644003F1235 /* Monitor */,
+				3380D71F1C310BEB006A674B /* Monitor Display */,
+				33D30F101BCE3E8A0095A6B5 /* Data Source */,
+				3331E8B71C251BC100FBC24C /* Data Modifier */,
+			);
+			name = Processor;
+			sourceTree = "<group>";
+		};
+		33D30F201BCE4D4F0095A6B5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				3331E8AD1C24F76F00FBC24C /* JSON Parser */,
+				3375ECFE1C223FBB00B9D103 /* HTML Parser */,
+				33D30F151BCE40770095A6B5 /* XML Parser */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		33D30F211BCE4D6D0095A6B5 /* Numerical Processor */ = {
+			isa = PBXGroup;
+			children = (
+				33974CA71C202B6400FE40CF /* CCNPWeightedSummation.swift */,
+			);
+			name = "Numerical Processor";
+			sourceTree = "<group>";
+		};
+		33D4B11E1C2E2E91007A0E1F /* Background Cruncher */ = {
+			isa = PBXGroup;
+			children = (
+				33D4B2051C2E7A5D007A0E1F /* Background Cruncher.entitlements */,
+				33D4B11F1C2E2E91007A0E1F /* AppDelegate.swift */,
+				33DF64051C92CDB900C22DD4 /* SleepDerviation.h */,
+				33DF64061C92CDB900C22DD4 /* SleepDerviation.m */,
+				33D4B1FF1C2E4BC0007A0E1F /* BCItem.swift */,
+				33D4B1211C2E2E91007A0E1F /* Assets_OSX.xcassets */,
+				33D4B1231C2E2E91007A0E1F /* MainMenu.xib */,
+				33D4B1261C2E2E91007A0E1F /* Info.plist */,
+				33DF64041C92CDB800C22DD4 /* Background Cruncher-Bridging-Header.h */,
+			);
+			path = "Background Cruncher";
+			sourceTree = "<group>";
+		};
+		33D4B1D81C2E4049007A0E1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D4B1E21C2E4049007A0E1F /* Kanna.framework */,
+				33D4B1E41C2E4049007A0E1F /* Kanna.framework */,
+				33D4B1E61C2E4049007A0E1F /* Kanna.framework */,
+				33D4B1E81C2E4049007A0E1F /* Kanna.framework */,
+				33D4B1EA1C2E4049007A0E1F /* KannaTests.xctest */,
+				33D4B1EC1C2E4049007A0E1F /* Kanna_OSX Tests.xctest */,
+				33D4B1EE1C2E4049007A0E1F /* Kanna_tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D4B2061C2E93EE007A0E1F /* Devices Merger */ = {
+			isa = PBXGroup;
+			children = (
+				33D4B2071C2E9420007A0E1F /* DeviceConsolidate.swift */,
+			);
+			name = "Devices Merger";
+			sourceTree = "<group>";
+		};
+		33DF00A91C26A644003F1235 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				3331E8B81C251BD700FBC24C /* Data Output */,
+				33DF00AF1C26B209003F1235 /* CCMonitor.swift */,
+			);
+			name = Monitor;
+			sourceTree = "<group>";
+		};
+		33DF00AA1C26A6A1003F1235 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				33DF00AB1C26A6C3003F1235 /* CCConstant.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3378CE521C25435600B9D977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3378CE541C25435600B9D977 /* CCStorage.h in Headers */,
+				3330A75C1C29048000E311A0 /* Bucket+CoreDataProperties.h in Headers */,
+				335131B51C7173400047B025 /* CCStorageContextManager.h in Headers */,
+				3378CE551C25435600B9D977 /* CCStorageBucket.h in Headers */,
+				33D4B2031C2E5323007A0E1F /* CruncherCore.h in Headers */,
+				3330A7641C29048000E311A0 /* Data+CoreDataProperties.h in Headers */,
+				3378CE571C25435600B9D977 /* CCProcessor.h in Headers */,
+				3378CE581C25435600B9D977 /* CCXMLParser.h in Headers */,
+				3378CE591C25435600B9D977 /* CCNetworkSource.h in Headers */,
+				3378CE5A1C25435600B9D977 /* CCDataSource.h in Headers */,
+				3378CE5C1C25435600B9D977 /* CCKeyValueStorage.h in Headers */,
+				3330A76C1C29048000E311A0 /* Storage+CoreDataProperties.h in Headers */,
+				3378CE5D1C25435600B9D977 /* CCKeyValueStorageBucket.h in Headers */,
+				3330A7601C29048000E311A0 /* Bucket.h in Headers */,
+				3378CE5E1C25435600B9D977 /* CCData.h in Headers */,
+				3330A7701C29048000E311A0 /* Storage.h in Headers */,
+				3330A7681C29048000E311A0 /* Data.h in Headers */,
+				33DF00B31C27C429003F1235 /* CCData_Priv.h in Headers */,
+				3378CE631C25435600B9D977 /* CCStorageBucket_Priv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30EBE1BCDED380095A6B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D30EC41BCDED380095A6B5 /* CruncherCore.h in Headers */,
+				33D30ED01BCDED550095A6B5 /* CCStorage.h in Headers */,
+				335131B41C7173400047B025 /* CCStorageContextManager.h in Headers */,
+				3330A75B1C29048000E311A0 /* Bucket+CoreDataProperties.h in Headers */,
+				33D30EDC1BCDF1180095A6B5 /* CCStorageBucket.h in Headers */,
+				3330A7631C29048000E311A0 /* Data+CoreDataProperties.h in Headers */,
+				33D30F241BCE4DC10095A6B5 /* CCProcessor.h in Headers */,
+				33D30F181BCE408B0095A6B5 /* CCXMLParser.h in Headers */,
+				33D30F1D1BCE41F40095A6B5 /* CCNetworkSource.h in Headers */,
+				33D30F131BCE3EB00095A6B5 /* CCDataSource.h in Headers */,
+				33D30ED81BCDEED20095A6B5 /* CCKeyValueStorage.h in Headers */,
+				3330A76B1C29048000E311A0 /* Storage+CoreDataProperties.h in Headers */,
+				33D30EE01BCDF1250095A6B5 /* CCKeyValueStorageBucket.h in Headers */,
+				3330A75F1C29048000E311A0 /* Bucket.h in Headers */,
+				33D30F0D1BCE36000095A6B5 /* CCData.h in Headers */,
+				3330A76F1C29048000E311A0 /* Storage.h in Headers */,
+				3330A7671C29048000E311A0 /* Data.h in Headers */,
+				33DF00B21C27C429003F1235 /* CCData_Priv.h in Headers */,
+				33D30F051BCE0A780095A6B5 /* CCStorageBucket_Priv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B1501C2E2EA5007A0E1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D4B1521C2E2EA5007A0E1F /* CCStorage.h in Headers */,
+				33D4B1531C2E2EA5007A0E1F /* Bucket+CoreDataProperties.h in Headers */,
+				335131B61C7173400047B025 /* CCStorageContextManager.h in Headers */,
+				33D4B1541C2E2EA5007A0E1F /* CCStorageBucket.h in Headers */,
+				33D4B1551C2E2EA5007A0E1F /* Data+CoreDataProperties.h in Headers */,
+				33D4B1571C2E2EA5007A0E1F /* CCProcessor.h in Headers */,
+				33D4B1581C2E2EA5007A0E1F /* CCXMLParser.h in Headers */,
+				33D4B1591C2E2EA5007A0E1F /* CCNetworkSource.h in Headers */,
+				33D4B2041C2E5970007A0E1F /* CruncherCore.h in Headers */,
+				33D4B15A1C2E2EA5007A0E1F /* CCDataSource.h in Headers */,
+				33D4B15B1C2E2EA5007A0E1F /* CCKeyValueStorage.h in Headers */,
+				33D4B15C1C2E2EA5007A0E1F /* Storage+CoreDataProperties.h in Headers */,
+				33D4B15D1C2E2EA5007A0E1F /* CCKeyValueStorageBucket.h in Headers */,
+				33D4B15E1C2E2EA5007A0E1F /* Bucket.h in Headers */,
+				33D4B15F1C2E2EA5007A0E1F /* CCData.h in Headers */,
+				33D4B1601C2E2EA5007A0E1F /* Storage.h in Headers */,
+				33D4B1611C2E2EA5007A0E1F /* Data.h in Headers */,
+				33D4B1621C2E2EA5007A0E1F /* CCData_Priv.h in Headers */,
+				33D4B1631C2E2EA5007A0E1F /* CCStorageBucket_Priv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		333B4D121C3B982700678663 /* Mobile Cruncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333B4D241C3B982700678663 /* Build configuration list for PBXNativeTarget "Mobile Cruncher" */;
+			buildPhases = (
+				333B4D0F1C3B982700678663 /* Sources */,
+				333B4D101C3B982700678663 /* Frameworks */,
+				333B4D111C3B982700678663 /* Resources */,
+				333B4D4D1C3B985200678663 /* Embed Watch Content */,
+				333B4D621C3B989900678663 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333B4D441C3B985200678663 /* PBXTargetDependency */,
+				333B4D5D1C3B989900678663 /* PBXTargetDependency */,
+				333B4D611C3B989900678663 /* PBXTargetDependency */,
+			);
+			name = "Mobile Cruncher";
+			productName = "Mobile Cruncher";
+			productReference = 333B4D131C3B982700678663 /* Mobile Cruncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		333B4D281C3B985200678663 /* Wearable Cruncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333B4D4A1C3B985200678663 /* Build configuration list for PBXNativeTarget "Wearable Cruncher" */;
+			buildPhases = (
+				333B4D271C3B985200678663 /* Resources */,
+				333B4D491C3B985200678663 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333B4D381C3B985200678663 /* PBXTargetDependency */,
+			);
+			name = "Wearable Cruncher";
+			productName = "Wearable Cruncher";
+			productReference = 333B4D291C3B985200678663 /* Wearable Cruncher.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		333B4D341C3B985200678663 /* Wearable Cruncher Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333B4D461C3B985200678663 /* Build configuration list for PBXNativeTarget "Wearable Cruncher Extension" */;
+			buildPhases = (
+				333B4D311C3B985200678663 /* Sources */,
+				333B4D321C3B985200678663 /* Frameworks */,
+				333B4D331C3B985200678663 /* Resources */,
+				333B4D571C3B988600678663 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333B4D521C3B988600678663 /* PBXTargetDependency */,
+				333B4D561C3B988600678663 /* PBXTargetDependency */,
+			);
+			name = "Wearable Cruncher Extension";
+			productName = "Wearable Cruncher Extension";
+			productReference = 333B4D351C3B985200678663 /* Wearable Cruncher Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		333CFAC01C42210600F7DF6E /* CruncherCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333CFAC91C42210600F7DF6E /* Build configuration list for PBXNativeTarget "CruncherCoreTests" */;
+			buildPhases = (
+				333CFABD1C42210600F7DF6E /* Sources */,
+				333CFABE1C42210600F7DF6E /* Frameworks */,
+				333CFABF1C42210600F7DF6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333CFAC81C42210600F7DF6E /* PBXTargetDependency */,
+			);
+			name = CruncherCoreTests;
+			productName = CruncherCoreTests;
+			productReference = 333CFAC11C42210600F7DF6E /* CruncherCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3378CE351C25435600B9D977 /* CruncherCore_WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3378CE681C25435600B9D977 /* Build configuration list for PBXNativeTarget "CruncherCore_WatchOS" */;
+			buildPhases = (
+				3378CE371C25435600B9D977 /* Sources */,
+				3378CE4D1C25435600B9D977 /* Frameworks */,
+				3378CE521C25435600B9D977 /* Headers */,
+				3378CE661C25435600B9D977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CruncherCore_WatchOS;
+			productName = "Cruncher Core";
+			productReference = 3378CE6B1C25435600B9D977 /* CruncherCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33D30EA01BCDED0F0095A6B5 /* Cruncher Studio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D30EB91BCDED0F0095A6B5 /* Build configuration list for PBXNativeTarget "Cruncher Studio" */;
+			buildPhases = (
+				33D30E9D1BCDED0F0095A6B5 /* Sources */,
+				33D30E9E1BCDED0F0095A6B5 /* Frameworks */,
+				33D30E9F1BCDED0F0095A6B5 /* Resources */,
+				33D30ECD1BCDED380095A6B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D30EC71BCDED380095A6B5 /* PBXTargetDependency */,
+			);
+			name = "Cruncher Studio";
+			productName = "Cruncher Studio";
+			productReference = 33D30EA11BCDED0F0095A6B5 /* Cruncher Studio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D30EC01BCDED380095A6B5 /* CruncherCore_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D30ECA1BCDED380095A6B5 /* Build configuration list for PBXNativeTarget "CruncherCore_iOS" */;
+			buildPhases = (
+				33D30EBC1BCDED380095A6B5 /* Sources */,
+				33D30EBD1BCDED380095A6B5 /* Frameworks */,
+				33D30EBE1BCDED380095A6B5 /* Headers */,
+				33D30EBF1BCDED380095A6B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CruncherCore_iOS;
+			productName = "Cruncher Core";
+			productReference = 33D30EC11BCDED380095A6B5 /* CruncherCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33D4B11C1C2E2E91007A0E1F /* Background Cruncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D4B1271C2E2E91007A0E1F /* Build configuration list for PBXNativeTarget "Background Cruncher" */;
+			buildPhases = (
+				33D4B1191C2E2E91007A0E1F /* Sources */,
+				33D4B11A1C2E2E91007A0E1F /* Frameworks */,
+				33D4B11B1C2E2E91007A0E1F /* Resources */,
+				33D4B1FE1C2E40D1007A0E1F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D4B16E1C2E2F7B007A0E1F /* PBXTargetDependency */,
+				33D4B1FD1C2E40D1007A0E1F /* PBXTargetDependency */,
+			);
+			name = "Background Cruncher";
+			productName = "Background Cruncher";
+			productReference = 33D4B11D1C2E2E91007A0E1F /* Background Cruncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D4B12A1C2E2EA5007A0E1F /* CruncherCore_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D4B1671C2E2EA5007A0E1F /* Build configuration list for PBXNativeTarget "CruncherCore_OSX" */;
+			buildPhases = (
+				33D4B12C1C2E2EA5007A0E1F /* Sources */,
+				33D4B14A1C2E2EA5007A0E1F /* Frameworks */,
+				33D4B1501C2E2EA5007A0E1F /* Headers */,
+				33D4B1651C2E2EA5007A0E1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CruncherCore_OSX;
+			productName = "Cruncher Core";
+			productReference = 33D4B16A1C2E2EA5007A0E1F /* CruncherCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D30E971BCDECF10095A6B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					333B4D121C3B982700678663 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RN9WKN4HU5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					333B4D281C3B985200678663 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RN9WKN4HU5;
+					};
+					333B4D341C3B985200678663 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RN9WKN4HU5;
+					};
+					333CFAC01C42210600F7DF6E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					33D30EA01BCDED0F0095A6B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = RN9WKN4HU5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					33D30EC01BCDED380095A6B5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					33D4B11C1C2E2E91007A0E1F = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RN9WKN4HU5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					33D4B12A1C2E2EA5007A0E1F = {
+						DevelopmentTeam = RN9WKN4HU5;
+					};
+				};
+			};
+			buildConfigurationList = 33D30E9A1BCDECF10095A6B5 /* Build configuration list for PBXProject "Data Crunchers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33D30E961BCDECF10095A6B5;
+			productRefGroup = 33D30EA21BCDED0F0095A6B5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33D4B1D81C2E4049007A0E1F /* Products */;
+					ProjectRef = 33D4B1D71C2E4049007A0E1F /* Kanna.xcodeproj */;
+				},
+				{
+					ProductGroup = 337A2CB91C5AB68D00051B24 /* Products */;
+					ProjectRef = 337A2CB81C5AB68D00051B24 /* UCIShuttle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				33D30EC01BCDED380095A6B5 /* CruncherCore_iOS */,
+				33D30EA01BCDED0F0095A6B5 /* Cruncher Studio */,
+				3378CE351C25435600B9D977 /* CruncherCore_WatchOS */,
+				33D4B12A1C2E2EA5007A0E1F /* CruncherCore_OSX */,
+				33D4B11C1C2E2E91007A0E1F /* Background Cruncher */,
+				333B4D121C3B982700678663 /* Mobile Cruncher */,
+				333B4D281C3B985200678663 /* Wearable Cruncher */,
+				333B4D341C3B985200678663 /* Wearable Cruncher Extension */,
+				333CFAC01C42210600F7DF6E /* CruncherCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		337A2CC11C5AB68F00051B24 /* UCIShuttle.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UCIShuttle.app;
+			remoteRef = 337A2CC01C5AB68F00051B24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1E21C2E4049007A0E1F /* Kanna.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kanna.framework;
+			remoteRef = 33D4B1E11C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1E41C2E4049007A0E1F /* Kanna.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kanna.framework;
+			remoteRef = 33D4B1E31C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1E61C2E4049007A0E1F /* Kanna.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kanna.framework;
+			remoteRef = 33D4B1E51C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1E81C2E4049007A0E1F /* Kanna.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kanna.framework;
+			remoteRef = 33D4B1E71C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1EA1C2E4049007A0E1F /* KannaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KannaTests.xctest;
+			remoteRef = 33D4B1E91C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1EC1C2E4049007A0E1F /* Kanna_OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Kanna_OSX Tests.xctest";
+			remoteRef = 33D4B1EB1C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33D4B1EE1C2E4049007A0E1F /* Kanna_tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Kanna_tvOS Tests.xctest";
+			remoteRef = 33D4B1ED1C2E4049007A0E1F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		333B4D111C3B982700678663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D221C3B982700678663 /* LaunchScreen.storyboard in Resources */,
+				333B4D1F1C3B982700678663 /* Assets.xcassets in Resources */,
+				333B4D1D1C3B982700678663 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D271C3B985200678663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D2F1C3B985200678663 /* Assets.xcassets in Resources */,
+				333B4D2D1C3B985200678663 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D331C3B985200678663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D411C3B985200678663 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333CFABF1C42210600F7DF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3378CE661C25435600B9D977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30E9F1BCDED0F0095A6B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D30EB71BCDED0F0095A6B5 /* LaunchScreen.storyboard in Resources */,
+				33D30EB41BCDED0F0095A6B5 /* Assets.xcassets in Resources */,
+				33D30EB21BCDED0F0095A6B5 /* Main.storyboard in Resources */,
+				333F48591BE9DC4000AAA0CD /* CruncherPortTableViewCell.xib in Resources */,
+				338B696D1BE0B8E500BA2B48 /* CruncherPartViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30EBF1BCDED380095A6B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B11B1C2E2E91007A0E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D4B1221C2E2E91007A0E1F /* Assets_OSX.xcassets in Resources */,
+				33D4B1251C2E2E91007A0E1F /* MainMenu.xib in Resources */,
+				33D4B2011C2E4D8B007A0E1F /* StockPriceCheck.container in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B1651C2E2EA5007A0E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		333B4D0F1C3B982700678663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D1A1C3B982700678663 /* DetailViewController.swift in Sources */,
+				333B4D181C3B982700678663 /* MasterViewController.swift in Sources */,
+				333B4D161C3B982700678663 /* AppDelegate.swift in Sources */,
+				331E855C1C575EB50016B21D /* GraphView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333B4D311C3B985200678663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333B4D3D1C3B985200678663 /* ExtensionDelegate.swift in Sources */,
+				333B4D3B1C3B985200678663 /* InterfaceController.swift in Sources */,
+				333B4D3F1C3B985200678663 /* ComplicationController.swift in Sources */,
+				339D17B31C78486F00D876B6 /* ValueInterfaceController.swift in Sources */,
+				3314092E1CA8F89B0047F6A8 /* ComplicationSetting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333CFABD1C42210600F7DF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333CFAC41C42210600F7DF6E /* CruncherCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3378CE371C25435600B9D977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3387661E1C377AB1009234F3 /* MainInterface.swift in Sources */,
+				33DF00B11C26B209003F1235 /* CCMonitor.swift in Sources */,
+				333DBD5C1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */,
+				3378CE381C25435600B9D977 /* CCStorageBucket.m in Sources */,
+				3378CE3A1C25435600B9D977 /* CCNPWeightedSummation.swift in Sources */,
+				3378CE3B1C25435600B9D977 /* CCStorage.m in Sources */,
+				337FE49B1C2CCE7200DAADBB /* WatchSession.swift in Sources */,
+				3330A7661C29048000E311A0 /* Data+CoreDataProperties.m in Sources */,
+				3330A76A1C29048000E311A0 /* Data.m in Sources */,
+				3378CE3C1C25435600B9D977 /* CCData.m in Sources */,
+				3330A7621C29048000E311A0 /* Bucket.m in Sources */,
+				33DF00AE1C26AABC003F1235 /* CCConstant.swift in Sources */,
+				3378CE3D1C25435600B9D977 /* CCStorage.xcdatamodeld in Sources */,
+				3378CE3F1C25435600B9D977 /* CCProcessor.m in Sources */,
+				3378CE401C25435600B9D977 /* CCKeyValueStorage.m in Sources */,
+				335131B81C7173400047B025 /* CCStorageContextManager.m in Sources */,
+				3378CE411C25435600B9D977 /* CCConverter.swift in Sources */,
+				3330A75E1C29048000E311A0 /* Bucket+CoreDataProperties.m in Sources */,
+				3378CE421C25435600B9D977 /* CCConsoleLog.swift in Sources */,
+				3330A76E1C29048000E311A0 /* Storage+CoreDataProperties.m in Sources */,
+				3378CE431C25435600B9D977 /* CCKeyValueStorageBucket.m in Sources */,
+				3330A7721C29048000E311A0 /* Storage.m in Sources */,
+				336D07461C51DF90002C89A5 /* CCProcessorContainer.swift in Sources */,
+				3378CE441C25435600B9D977 /* CCXMLParser.m in Sources */,
+				336CE8F81C7E425200ADF41D /* watchSyncProtocol.swift in Sources */,
+				3378CE461C25435600B9D977 /* CCHTMLParser.swift in Sources */,
+				332622B91C6734BB00A79613 /* ProtocolCipher.swift in Sources */,
+				3378CE491C25435600B9D977 /* CCNetworkSource.m in Sources */,
+				3378CE4A1C25435600B9D977 /* CCJSONParser.swift in Sources */,
+				3378CE4B1C25435600B9D977 /* CCDataSource.m in Sources */,
+				3378CE7B1C254B8500B9D977 /* CCWatchTextComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30E9D1BCDED0F0095A6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333F48581BE9DC4000AAA0CD /* CruncherPortTableViewCell.swift in Sources */,
+				338B696C1BE0B8E500BA2B48 /* CruncherPartViewController.swift in Sources */,
+				33D30EA91BCDED0F0095A6B5 /* AppDelegate.m in Sources */,
+				33D30EAC1BCDED0F0095A6B5 /* MasterViewController.m in Sources */,
+				33D30EA61BCDED0F0095A6B5 /* main.m in Sources */,
+				33D30EAF1BCDED0F0095A6B5 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D30EBC1BCDED380095A6B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336CE8F71C7E425100ADF41D /* watchSyncProtocol.swift in Sources */,
+				33DF00B01C26B209003F1235 /* CCMonitor.swift in Sources */,
+				33D30EDD1BCDF1180095A6B5 /* CCStorageBucket.m in Sources */,
+				33D077991C255D9800E4CA6F /* CCValueOutput.swift in Sources */,
+				3375ED031C2244EB00B9D103 /* CCNPWeightedSummation.swift in Sources */,
+				335131B71C7173400047B025 /* CCStorageContextManager.m in Sources */,
+				3334B67A1C5814C500D0328F /* CCMapping.swift in Sources */,
+				3387661D1C377AB1009234F3 /* MainInterface.swift in Sources */,
+				337FE4A01C2CEC6900DAADBB /* CCWatchTextComplication.swift in Sources */,
+				333DBD5B1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */,
+				337FE49A1C2CCE7200DAADBB /* WatchSession.swift in Sources */,
+				3330A7651C29048000E311A0 /* Data+CoreDataProperties.m in Sources */,
+				3330A7691C29048000E311A0 /* Data.m in Sources */,
+				33D30ED11BCDED550095A6B5 /* CCStorage.m in Sources */,
+				3380D7211C310C0C006A674B /* CCNumberDisplay.swift in Sources */,
+				3330A7611C29048000E311A0 /* Bucket.m in Sources */,
+				33DF00AD1C26AABC003F1235 /* CCConstant.swift in Sources */,
+				33D30F0E1BCE36000095A6B5 /* CCData.m in Sources */,
+				33D30EE41BCDF17E0095A6B5 /* CCStorage.xcdatamodeld in Sources */,
+				33D30F251BCE4DC10095A6B5 /* CCProcessor.m in Sources */,
+				33D30ED91BCDEED20095A6B5 /* CCKeyValueStorage.m in Sources */,
+				338766221C3889EC009234F3 /* CKHelperFunction.swift in Sources */,
+				332622B81C6734BB00A79613 /* ProtocolCipher.swift in Sources */,
+				3330A75D1C29048000E311A0 /* Bucket+CoreDataProperties.m in Sources */,
+				3331E8BB1C251C0000FBC24C /* CCConverter.swift in Sources */,
+				3330A76D1C29048000E311A0 /* Storage+CoreDataProperties.m in Sources */,
+				3331E8BF1C251C3D00FBC24C /* CCConsoleLog.swift in Sources */,
+				3330A7711C29048000E311A0 /* Storage.m in Sources */,
+				33D30EE11BCDF1250095A6B5 /* CCKeyValueStorageBucket.m in Sources */,
+				33D30F191BCE408B0095A6B5 /* CCXMLParser.m in Sources */,
+				3375ED041C2244EE00B9D103 /* CCHTMLParser.swift in Sources */,
+				3380D71C1C2EA880006A674B /* DeviceConsolidate.swift in Sources */,
+				33D30F1E1BCE41F40095A6B5 /* CCNetworkSource.m in Sources */,
+				3331E8BC1C251C0600FBC24C /* CCJSONParser.swift in Sources */,
+				33D30F141BCE3EB00095A6B5 /* CCDataSource.m in Sources */,
+				3330A7821C2A527700E311A0 /* CCProcessorContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B1191C2E2E91007A0E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D4B1201C2E2E91007A0E1F /* AppDelegate.swift in Sources */,
+				33DF64071C92CDB900C22DD4 /* SleepDerviation.m in Sources */,
+				33D4B2001C2E4BC0007A0E1F /* BCItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D4B12C1C2E2EA5007A0E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D4B12D1C2E2EA5007A0E1F /* CCMonitor.swift in Sources */,
+				33D4B12E1C2E2EA5007A0E1F /* CCStorageBucket.m in Sources */,
+				33D4B12F1C2E2EA5007A0E1F /* CCValueOutput.swift in Sources */,
+				33D4B20A1C2E9420007A0E1F /* DeviceConsolidate.swift in Sources */,
+				33D4B1301C2E2EA5007A0E1F /* CCNPWeightedSummation.swift in Sources */,
+				338766241C3889EC009234F3 /* CKHelperFunction.swift in Sources */,
+				33D4B1331C2E2EA5007A0E1F /* Data+CoreDataProperties.m in Sources */,
+				33D4B1341C2E2EA5007A0E1F /* Data.m in Sources */,
+				3380D7221C310C0C006A674B /* CCNumberDisplay.swift in Sources */,
+				33D4B1351C2E2EA5007A0E1F /* CCStorage.m in Sources */,
+				33D4B1361C2E2EA5007A0E1F /* Bucket.m in Sources */,
+				33D4B1371C2E2EA5007A0E1F /* CCConstant.swift in Sources */,
+				33D4B1381C2E2EA5007A0E1F /* CCData.m in Sources */,
+				33D4B1391C2E2EA5007A0E1F /* CCStorage.xcdatamodeld in Sources */,
+				33D4B13A1C2E2EA5007A0E1F /* CCProcessor.m in Sources */,
+				33D4B13B1C2E2EA5007A0E1F /* CCKeyValueStorage.m in Sources */,
+				33D4B13C1C2E2EA5007A0E1F /* Bucket+CoreDataProperties.m in Sources */,
+				332622BA1C6734BB00A79613 /* ProtocolCipher.swift in Sources */,
+				33D4B13E1C2E2EA5007A0E1F /* CCConverter.swift in Sources */,
+				33D4B16F1C2E30F7007A0E1F /* CCWatchTextComplication.swift in Sources */,
+				33D4B13F1C2E2EA5007A0E1F /* Storage+CoreDataProperties.m in Sources */,
+				33D4B1401C2E2EA5007A0E1F /* CCConsoleLog.swift in Sources */,
+				33D4B1411C2E2EA5007A0E1F /* Storage.m in Sources */,
+				33D4B1421C2E2EA5007A0E1F /* CCKeyValueStorageBucket.m in Sources */,
+				33D4B1431C2E2EA5007A0E1F /* CCXMLParser.m in Sources */,
+				33D4B1451C2E2EA5007A0E1F /* CCHTMLParser.swift in Sources */,
+				3387661F1C377AB1009234F3 /* MainInterface.swift in Sources */,
+				333DBD5D1C6EC10600A5D4EC /* CacheStorageSpace.swift in Sources */,
+				33D4B1461C2E2EA5007A0E1F /* CCNetworkSource.m in Sources */,
+				33D4B1471C2E2EA5007A0E1F /* CCJSONParser.swift in Sources */,
+				335131B91C7173400047B025 /* CCStorageContextManager.m in Sources */,
+				33D4B1481C2E2EA5007A0E1F /* CCDataSource.m in Sources */,
+				33D4B1491C2E2EA5007A0E1F /* CCProcessorContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		333B4D381C3B985200678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333B4D341C3B985200678663 /* Wearable Cruncher Extension */;
+			targetProxy = 333B4D371C3B985200678663 /* PBXContainerItemProxy */;
+		};
+		333B4D441C3B985200678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333B4D281C3B985200678663 /* Wearable Cruncher */;
+			targetProxy = 333B4D431C3B985200678663 /* PBXContainerItemProxy */;
+		};
+		333B4D521C3B988600678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna_watchOS;
+			targetProxy = 333B4D511C3B988600678663 /* PBXContainerItemProxy */;
+		};
+		333B4D561C3B988600678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3378CE351C25435600B9D977 /* CruncherCore_WatchOS */;
+			targetProxy = 333B4D551C3B988600678663 /* PBXContainerItemProxy */;
+		};
+		333B4D5D1C3B989900678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna_iOS;
+			targetProxy = 333B4D5C1C3B989900678663 /* PBXContainerItemProxy */;
+		};
+		333B4D611C3B989900678663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D30EC01BCDED380095A6B5 /* CruncherCore_iOS */;
+			targetProxy = 333B4D601C3B989900678663 /* PBXContainerItemProxy */;
+		};
+		333CFAC81C42210600F7DF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D4B12A1C2E2EA5007A0E1F /* CruncherCore_OSX */;
+			targetProxy = 333CFAC71C42210600F7DF6E /* PBXContainerItemProxy */;
+		};
+		33D30EC71BCDED380095A6B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D30EC01BCDED380095A6B5 /* CruncherCore_iOS */;
+			targetProxy = 33D30EC61BCDED380095A6B5 /* PBXContainerItemProxy */;
+		};
+		33D4B16E1C2E2F7B007A0E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D4B12A1C2E2EA5007A0E1F /* CruncherCore_OSX */;
+			targetProxy = 33D4B16D1C2E2F7B007A0E1F /* PBXContainerItemProxy */;
+		};
+		33D4B1FD1C2E40D1007A0E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna_OSX;
+			targetProxy = 33D4B1FC1C2E40D1007A0E1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		333B4D1B1C3B982700678663 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333B4D1C1C3B982700678663 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		333B4D201C3B982700678663 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333B4D211C3B982700678663 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		333B4D2B1C3B985200678663 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333B4D2C1C3B985200678663 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		33974CC41C216A5700FE40CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33974CC51C216A5700FE40CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33974CC91C216A5700FE40CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33974CCA1C216A5700FE40CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33D0779E1C255F2200E4CA6F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D0779F1C255F2200E4CA6F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		33D30EB01BCDED0F0095A6B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D30EB11BCDED0F0095A6B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33D30EB51BCDED0F0095A6B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D30EB61BCDED0F0095A6B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33D4B1231C2E2E91007A0E1F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D4B1241C2E2E91007A0E1F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		333B4D251C3B982700678663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Mobile Cruncher/Mobile Cruncher.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Mobile Cruncher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		333B4D261C3B982700678663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Mobile Cruncher/Mobile Cruncher.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Mobile Cruncher/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		333B4D471C3B985200678663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wearable Cruncher Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		333B4D481C3B985200678663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wearable Cruncher Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		333B4D4B1C3B985200678663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = Wearable_Cruncher_Extension;
+				INFOPLIST_FILE = "Wearable Cruncher/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		333B4D4C1C3B985200678663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_MODULE = Wearable_Cruncher_Extension;
+				INFOPLIST_FILE = "Wearable Cruncher/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Mobile-Cruncher.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		333CFACA1C42210600F7DF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = CruncherCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = WMC.CruncherCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		333CFACB1C42210600F7DF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = CruncherCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = WMC.CruncherCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3378CE691C25435600B9D977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		3378CE6A1C25435600B9D977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-watchos",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		33D30E9B1BCDECF10095A6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33D30E9C1BCDECF10095A6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
+				LIBRARY_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		33D30EBA1BCDED0F0095A6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Cruncher Studio/Cruncher Studio.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Studio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Studio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cruncher Studio/Cruncher Studio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		33D30EBB1BCDED0F0095A6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Cruncher Studio/Cruncher Studio.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Studio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Studio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Cruncher Studio/Cruncher Studio-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33D30ECB1BCDED380095A6B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		33D30ECC1BCDED380095A6B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		33D4B1281C2E2E91007A0E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Background Cruncher/Background Cruncher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Background Cruncher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Background-Cruncher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Background Cruncher/Background Cruncher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33D4B1291C2E2E91007A0E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Background Cruncher/Background Cruncher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Background Cruncher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Background-Cruncher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Background Cruncher/Background Cruncher-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		33D4B1681C2E2EA5007A0E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		33D4B1691C2E2EA5007A0E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Cruncher Core/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "WMC.Cruncher-Core";
+				PRODUCT_NAME = CruncherCore;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333B4D241C3B982700678663 /* Build configuration list for PBXNativeTarget "Mobile Cruncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333B4D251C3B982700678663 /* Debug */,
+				333B4D261C3B982700678663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333B4D461C3B985200678663 /* Build configuration list for PBXNativeTarget "Wearable Cruncher Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333B4D471C3B985200678663 /* Debug */,
+				333B4D481C3B985200678663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333B4D4A1C3B985200678663 /* Build configuration list for PBXNativeTarget "Wearable Cruncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333B4D4B1C3B985200678663 /* Debug */,
+				333B4D4C1C3B985200678663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333CFAC91C42210600F7DF6E /* Build configuration list for PBXNativeTarget "CruncherCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333CFACA1C42210600F7DF6E /* Debug */,
+				333CFACB1C42210600F7DF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3378CE681C25435600B9D977 /* Build configuration list for PBXNativeTarget "CruncherCore_WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3378CE691C25435600B9D977 /* Debug */,
+				3378CE6A1C25435600B9D977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D30E9A1BCDECF10095A6B5 /* Build configuration list for PBXProject "Data Crunchers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D30E9B1BCDECF10095A6B5 /* Debug */,
+				33D30E9C1BCDECF10095A6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D30EB91BCDED0F0095A6B5 /* Build configuration list for PBXNativeTarget "Cruncher Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D30EBA1BCDED0F0095A6B5 /* Debug */,
+				33D30EBB1BCDED0F0095A6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D30ECA1BCDED380095A6B5 /* Build configuration list for PBXNativeTarget "CruncherCore_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D30ECB1BCDED380095A6B5 /* Debug */,
+				33D30ECC1BCDED380095A6B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D4B1271C2E2E91007A0E1F /* Build configuration list for PBXNativeTarget "Background Cruncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D4B1281C2E2E91007A0E1F /* Debug */,
+				33D4B1291C2E2E91007A0E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D4B1671C2E2EA5007A0E1F /* Build configuration list for PBXNativeTarget "CruncherCore_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D4B1681C2E2EA5007A0E1F /* Debug */,
+				33D4B1691C2E2EA5007A0E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33D30EE21BCDF17E0095A6B5 /* CCStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				335131AC1C6EE9F60047B025 /* CCStorage v2.xcdatamodel */,
+				33D30EE31BCDF17E0095A6B5 /* CCStorage.xcdatamodel */,
+			);
+			currentVersion = 33D30EE31BCDF17E0095A6B5 /* CCStorage.xcdatamodel */;
+			name = CCStorage.xcdatamodeld;
+			path = "Cruncher Core/CCStorage.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 33D30E971BCDECF10095A6B5 /* Project object */;
+}

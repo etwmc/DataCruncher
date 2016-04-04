@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CruncherPartViewController" customModule="Cruncher_Studio" customModuleProvider="target">
+            <connections>
+                <outlet property="inputPortTableView" destination="aTI-dG-xvR" id="uXJ-9i-K8w"/>
+                <outlet property="outputPortTableView" destination="FER-HO-uIY" id="GdV-FU-7By"/>
+                <outlet property="partTitleLabel" destination="hkT-oK-R6F" id="EUc-B0-qbF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="6uT-9a-NvZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkT-oK-R6F">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.36148648648648651" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" rowHeight="15" sectionHeaderHeight="20" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="aTI-dG-xvR">
+                    <rect key="frame" x="0.0" y="29" width="187" height="205"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="q5d-Wm-zW4"/>
+                        <outlet property="delegate" destination="-1" id="aac-RL-9En"/>
+                    </connections>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" rowHeight="15" sectionHeaderHeight="20" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="FER-HO-uIY">
+                    <rect key="frame" x="187" y="28" width="187" height="205"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pQL-Rd-NFb"/>
+                        <outlet property="delegate" destination="-1" id="sxF-KY-Dtl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="FER-HO-uIY" firstAttribute="width" secondItem="aTI-dG-xvR" secondAttribute="width" id="1M1-sg-toN"/>
+                <constraint firstItem="aTI-dG-xvR" firstAttribute="top" secondItem="hkT-oK-R6F" secondAttribute="bottom" id="1dX-yT-N8l"/>
+                <constraint firstItem="hkT-oK-R6F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Yx-EY-Yd3"/>
+                <constraint firstItem="FER-HO-uIY" firstAttribute="top" secondItem="hkT-oK-R6F" secondAttribute="bottom" id="6MQ-Lr-Gwq"/>
+                <constraint firstAttribute="bottom" secondItem="FER-HO-uIY" secondAttribute="bottom" id="71x-mi-MAJ"/>
+                <constraint firstAttribute="bottom" secondItem="aTI-dG-xvR" secondAttribute="bottom" id="EO2-ks-dhj"/>
+                <constraint firstAttribute="trailing" secondItem="hkT-oK-R6F" secondAttribute="trailing" id="FtG-xT-dQB"/>
+                <constraint firstAttribute="bottom" secondItem="FER-HO-uIY" secondAttribute="bottom" id="Iu1-Xe-cbe"/>
+                <constraint firstItem="aTI-dG-xvR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TNP-RA-mZa"/>
+                <constraint firstItem="aTI-dG-xvR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U2c-o7-6gV"/>
+                <constraint firstItem="hkT-oK-R6F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VeE-s1-cnT"/>
+                <constraint firstAttribute="trailing" secondItem="FER-HO-uIY" secondAttribute="trailing" id="akw-eq-OU4"/>
+                <constraint firstAttribute="trailing" secondItem="hkT-oK-R6F" secondAttribute="trailing" id="bt1-Ph-snQ"/>
+                <constraint firstItem="FER-HO-uIY" firstAttribute="leading" secondItem="aTI-dG-xvR" secondAttribute="trailing" id="cFu-d3-Bzc"/>
+                <constraint firstItem="FER-HO-uIY" firstAttribute="top" secondItem="hkT-oK-R6F" secondAttribute="bottom" constant="9" id="cdD-4n-7wB"/>
+                <constraint firstAttribute="trailing" secondItem="FER-HO-uIY" secondAttribute="trailing" id="dIh-mg-30q"/>
+                <constraint firstAttribute="bottom" secondItem="aTI-dG-xvR" secondAttribute="bottom" id="eHQ-0N-vAM"/>
+                <constraint firstItem="FER-HO-uIY" firstAttribute="height" secondItem="aTI-dG-xvR" secondAttribute="height" id="pVs-4h-gAP"/>
+                <constraint firstItem="aTI-dG-xvR" firstAttribute="top" secondItem="hkT-oK-R6F" secondAttribute="bottom" constant="9" id="rcK-7x-hkZ"/>
+                <constraint firstItem="hkT-oK-R6F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wkW-iy-4fi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="VeE-s1-cnT"/>
+                    <exclude reference="bt1-Ph-snQ"/>
+                    <exclude reference="TNP-RA-mZa"/>
+                    <exclude reference="eHQ-0N-vAM"/>
+                    <exclude reference="rcK-7x-hkZ"/>
+                    <exclude reference="71x-mi-MAJ"/>
+                    <exclude reference="akw-eq-OU4"/>
+                    <exclude reference="cdD-4n-7wB"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="155" y="957"/>
+        </view>
+    </objects>
+</document>

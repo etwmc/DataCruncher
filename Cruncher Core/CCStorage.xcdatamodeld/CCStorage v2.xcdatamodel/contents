@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10137.1" systemVersion="15E39d" minimumToolsVersion="Xcode 7.0">
+    <entity name="Bucket" representedClassName="Bucket" syncable="YES">
+        <attribute name="confData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Data" syncable="YES"/>
+    </entity>
+    <entity name="Data" representedClassName="Data" syncable="YES">
+        <attribute name="insertDate" attributeType="Date" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Storage" representedClassName="Storage" syncable="YES">
+        <attribute name="confData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="bucket" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bucket" syncable="YES"/>
+    </entity>
+    <fetchRequest name="LastUpdateBucket" entity="Bucket" predicateString="newestData.insertDate == max:(newestData.insertDate)" fetchLimit="1"/>
+    <elements>
+        <element name="Bucket" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Data" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Storage" positionX="-45" positionY="18" width="128" height="90"/>
+    </elements>
+</model>
