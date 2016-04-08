@@ -8,11 +8,21 @@
 
 import WatchKit
 import ClockKit
+import CruncherCore
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        //Boot up the protocol
+        watchSyncProtocol.initProtocol()
+        let _ = WatchSession.defaultSession
+        //Update all complication
+        if let comps = CLKComplicationServer.sharedInstance().activeComplications {
+            for comp in comps {
+                CLKComplicationServer.sharedInstance().extendTimelineForComplication(comp)
+            }
+        }
     }
 
     func applicationDidBecomeActive() {

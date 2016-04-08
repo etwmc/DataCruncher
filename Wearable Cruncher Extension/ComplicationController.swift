@@ -30,6 +30,8 @@ struct value {
 
 class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionDelegate, WatchComplicationDelegate {
     
+    var lastUpdatePoint = ("", NSDate())
+    
     func rebuildData() {
         for comp in CLKComplicationServer.sharedInstance().activeComplications! {
             CLKComplicationServer.sharedInstance().reloadTimelineForComplication(comp)
@@ -46,6 +48,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
     }
     
     let watchSession = WatchSession.defaultSession
+    let dataSrcProtocol = watchSyncProtocol.sharedProtocol
     
     func unwrapValue(input: [String: NSObject])->value {
         return value(name: "", value: "", type: valueType.list, minValue: nil, maxValue: nil)
@@ -60,13 +63,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
     override init() {
         super.init()
         
-        
-        for comp in CLKComplicationServer.sharedInstance().activeComplications! {
-            CLKComplicationServer.sharedInstance().reloadTimelineForComplication(comp)
+        if let list = ComplicationSetting.fetchSubscribe() {
+            //Has things to show, so ask for update
+            watchSession.subscribeKeys(list)
         }
         
-        
         watchSyncProtocol.sharedProtocol.complicationDelegate = self
+        watchSyncProtocol.sharedProtocol.syncPacket()
     }
     
     func numberFormatter(   number: NSNumber)->String {
@@ -236,15 +239,22 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         
+        debugPrint("Refresh Complication")
+        
         //Nothing available, try to populate
         if let array = ComplicationSetting.fetchSubscribe() {
             //If there is complication
             if let key = array.first {
-                if let (date, data) = CacheStorageSpace.commonStorageSpace.newestValueForKey(key) {
+                if let (data, date) = dataSrcProtocol.updatedKey(key) {
                     do {
                         if (date.timeIntervalSinceNow * -1.0 > 5*60) {
                             //The date is old, refresh
-                            WCSession.defaultSession().sendMessage(["Complication": key], replyHandler: nil, errorHandler: nil)
+                            //WCSession.defaultSession().sendMessage(["Complication": key], replyHandler: nil, errorHandler: nil)
+                        }
+                        if (lastUpdatePoint.0 == key && lastUpdatePoint.1 == date) {
+                            //Data hasn't change, so terminate
+                            handler(nil)
+                            return
                         }
                         if let dict = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? [String: NSObject] {
                             let currentValue = value(name: dict.first!.0, value: dict.first!.1, type: valueType.singleNumber, minValue: 0, maxValue: Double.infinity)
@@ -259,6 +269,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
                 }
             }
         }
+        handler(nil)
+        return
         
         
         // Call the handler with the current timeline entry
@@ -302,14 +314,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
             }
         }
         
-        
-        //Placeholder
-        //SHould be an animation of hammer
-        let imageName: String = "CruncherHammer"
-        let cruncherLogo = UIImage(named: imageName)!
-        let template = complicationTemplate(complication, currentValue: value(name: "Cruncher", value: cruncherLogo, type: valueType.image, minValue: nil, maxValue: nil))
-            handler(CLKComplicationTimelineEntry(date: NSDate(), complicationTemplate: template!))
-        
+        handler(nil)
     }
     
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
@@ -378,17 +383,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource, WatchSessionD
         handler(nil)
     }
     
-    func requestedUpdateDidBegin() {
-        
-    }
-    
     func requestedUpdateBudgetExhausted() {
-        
+        debugPrint("Over budget")
     }
     
     // MARK: - Update Scheduling
     
-    let timeValue = 5.0
+    let timeValue = 1.0
     
     func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
         // Call the handler with the date when you would next like to be given the opportunity to update your complication content

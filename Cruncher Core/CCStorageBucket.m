@@ -26,6 +26,7 @@
     CKRecord *lastUpdatedRecord;
     CKDatabase *database;
     NSData *lastData; CCData *lastCCData;
+    int retryCounter;
 #endif
 }
 @end
@@ -185,7 +186,8 @@
                 CKSubscription*subsciption = [[CKSubscription alloc] initWithRecordType:@"LastestValue" predicate:[NSPredicate predicateWithFormat:@"recordID == %@", record.recordID] subscriptionID: subscritionName options:CKSubscriptionOptionsFiresOnRecordUpdate];
                 subsciption.notificationInfo = [[CKNotificationInfo alloc] init];
                 subsciption.notificationInfo.alertBody = @"";
-                subsciption.notificationInfo.shouldSendContentAvailable = false;
+                subsciption.notificationInfo.soundName = @"";
+                subsciption.notificationInfo.shouldSendContentAvailable = true;
                 subsciption.notificationInfo.category = @"Bucket_Update";
                 return subsciption;
             } completionHandler:^(CKSubscription * _Nullable subsciption, NSError * _Nullable error) {
@@ -194,6 +196,7 @@
                 else {
                     subsciption.notificationInfo = [[CKNotificationInfo alloc] init];
                     subsciption.notificationInfo.alertBody = @"";
+                    subsciption.notificationInfo.soundName = @"";
                     subsciption.notificationInfo.shouldSendContentAvailable = true;
                     subsciption.notificationInfo.category = @"Bucket_Update";
                     //Ensure the record ID didn't change in the process
@@ -217,6 +220,7 @@
         lastCCData = lastest.firstObject;
         lastData = lastCCData.obj.value;
         [self initCloudKit];
+        retryCounter = 0;
 #endif
     }
     return self;
@@ -240,6 +244,18 @@
     
     __block Data *obj;
     NSDate *insertDate = [NSDate date];
+    
+    if (![data isEqualToData:lastData] || retryCounter >= 10) {
+        [lastUpdatedRecord setObject:data forKey:@"data"];
+        [lastUpdatedRecord setObject:insertDate forKey:@"updateTime"];
+        
+        [[CCStorageBucketRecordDelegate sharedDelegate] addRecord:lastUpdatedRecord];
+        retryCounter = 0;
+    } else {
+        retryCounter++;
+        return lastCCData;
+    }
+    
     [bucketObj.managedObjectContext performBlockAndWait:^{
         
         obj = [NSEntityDescription insertNewObjectForEntityForName:@"Data" inManagedObjectContext:[CCStorage storageContext]];
@@ -249,13 +265,6 @@
         [bucketObj addDataObject:obj];
         
     }];
-    
-    if (![data isEqualToData:lastData]) {
-        [lastUpdatedRecord setObject:data forKey:@"data"];
-        [lastUpdatedRecord setObject:insertDate forKey:@"updateTime"];
-        
-        [[CCStorageBucketRecordDelegate sharedDelegate] addRecord:lastUpdatedRecord];
-    }
     
     lastData = data;
     

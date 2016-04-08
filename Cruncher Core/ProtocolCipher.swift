@@ -123,5 +123,32 @@ public class ProtocolCipher: NSObject {
         return true
         
     }
-    
+    public func outgoingImmeMessageFlush()->Bool {
+        for (key, callback) in routineUpdater {
+            if (!nextMessage.keys.contains(key)) {
+                //If does not contain a value, ask the updater if it wants to update
+                if let reply = callback() {
+                    //Got message back
+                    addMessage(key, value: reply)
+                }
+                
+            }
+        }
+        
+        //Check availability
+        let available: Bool
+        if (self.type == .WatchConnective) {
+            #if !os(OSX)
+                available = WatchSession.defaultSession.canSendMessage()
+            #endif
+        } else { return false }
+        
+        dispatch_semaphore_wait(messageLock, DISPATCH_TIME_FOREVER)
+        let currentMessage = nextMessage
+        nextMessage = [:]
+        dispatch_semaphore_signal(messageLock)
+        
+        return true
+        
+    }
 }

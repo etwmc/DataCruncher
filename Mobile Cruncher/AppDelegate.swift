@@ -16,8 +16,13 @@ class mobileMonitorGlobalObj {
     let cruncherCoreQueue = dispatch_queue_create("Cruncher Queue", DISPATCH_QUEUE_CONCURRENT)
 }
 
-class backgroundToken {
+class backgroundToken: NSObject {
     public var token = UIBackgroundTaskInvalid
+    public var timer: NSTimer! = nil
+    override init() {
+        super.init()
+        timer = NSTimer.scheduledTimerWithTimeInterval(10.0, target: UIApplication.sharedApplication().delegate as! AppDelegate, selector: "scheduledBackgroundWrap:", userInfo: self, repeats: false)
+    }
 }
 
 @UIApplicationMain
@@ -63,16 +68,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        taskID = application.beginBackgroundTaskWithExpirationHandler { () -> Void in
+        let token = backgroundToken()
+        token.token = application.beginBackgroundTaskWithExpirationHandler { () -> Void in
             if (self.taskID != UIBackgroundTaskInvalid) {
-                application.endBackgroundTask(self.taskID)
+                application.endBackgroundTask(token.token)
             }
         }
         handleFrameworkRemoteNotifcation(userInfo) { (notification: [NSObject : AnyObject]) -> Void in
             
         }
         completionHandler(.NewData)
-        //application.endBackgroundTask(self.taskID)
+    }
+    
+    func scheduledBackgroundWrap(timer: NSTimer) {
+        if let token = timer.userInfo as? backgroundToken {
+            UIApplication.sharedApplication().endBackgroundTask(token.token)
+        }
     }
     
     func applicationWillResignActive(application: UIApplication) {

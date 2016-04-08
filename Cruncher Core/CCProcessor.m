@@ -400,6 +400,8 @@ NSObject *unwrapObject(NSObject * _Nullable obj,Class c) {
     if (processor) [lastUpdatedDependentcy addObject:processor];
     if ([lastUpdatedDependentcy isEqualToSet:dependents]) {
         [self startProcessWithInput:[NSDictionary dictionaryWithDictionary:input] complete:^(NSDictionary<NSString *,NSObject *> *_result) {
+            //Drain the inputs
+            [input removeAllObjects];
             dispatch_async(processorMessageQueue, ^{
                 [self updateResult:_result];
             });

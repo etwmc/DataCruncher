@@ -47,15 +47,12 @@ public class watchSyncProtocol {
     
     let dataSrcChipher = ProtocolCipher.watchConnectiveCipher
     
-    var context: [String: AnyObject] = [:]
-    
     func check() {
     }
     
     //1.0 4 state
     //Sync: watch->phone, for requesting initial packet, with "Init" as callback with seed; foreground update
     //Data: phone->watch, for pushing newest data, with no callback; background update
-    //Complication: watch->phone, for asking newest data with bucket name in the value, with "Complication" as callback if new data exist with data; complication update
     //State: phone->watch, move from one bucket to another, request immediate swap on complication; complication update
     
     #if os(watchOS)
@@ -63,7 +60,6 @@ public class watchSyncProtocol {
     #endif
     
     init() {
-        context = WCSession.defaultSession().applicationContext
         dataSrcChipher.addCallback("Sync") { (key: String, value: AnyObject) in
             #if os(iOS)
                 //Send packet
@@ -71,7 +67,7 @@ public class watchSyncProtocol {
                 if let date = value as? NSDate {
                     packet = CacheStorageSpace.commonStorageSpace.syncPacket(date)
                 } else {
-                    packet = CacheStorageSpace.commonStorageSpace.syncPacket(NSDate(timeIntervalSinceNow: -24*60*60.0))
+                    packet = CacheStorageSpace.commonStorageSpace.syncPacket(NSDate(timeIntervalSinceNow: -2*24*60*60.0))
                 }
                 self.dataSrcChipher.addMessage("Sync", value: packet)
                 self.dataSrcChipher.outgoingMessageFlush()
@@ -79,7 +75,7 @@ public class watchSyncProtocol {
             #if os(watchOS)
                 if let data = value as? NSData {
                     CacheStorageSpace.commonStorageSpace.syncFromPacket(data)
-                    self.complicationDelegate?.rebuildData()
+                    //self.complicationDelegate?.rebuildData()
                     self.complicationDelegate?.updateData()
                 }
             #endif
@@ -97,7 +93,7 @@ public class watchSyncProtocol {
         dataSrcChipher.addCallback("Complication") { (key: String, value: AnyObject) in
             #if os(iOS)
                 if let bucketName = value as? String {
-                    let bucket: CCStorageBucket? = nil
+                    let bucket: CCStorageBucket? = CCKeyValueStorage.sharedStorage().fetchBucket(bucketName)
                     if let dataSet = bucket?.lastestData(1) {
                         if dataSet.count == 1 {
                             let dataPt = (dataSet as NSOrderedSet).firstObject as! CCData
@@ -118,6 +114,7 @@ public class watchSyncProtocol {
                     }
                 }
             #endif
+            debugPrint("Sync complication")
         }
         dataSrcChipher.addCallback("State") { (key: String, value: AnyObject) in
             #if os(watchOS)
@@ -134,10 +131,14 @@ public class watchSyncProtocol {
         let pt = watchDataPoint(key: key, data: data, lastUpdatedTime: lastUpdatedTime)
         let packet = NSKeyedArchiver.archivedDataWithRootObject(pt)
         dataSrcChipher.addMessage("Data", value:packet)
-        dataSrcChipher.outgoingMessageFlush()
+        dataSrcChipher.outgoingImmeMessageFlush()
+        #if os(iOS)
+        WatchSession.defaultSession.sendComplicationInfo([key: packet])
+        #endif
     }
     
-    func syncPacket() {
+    #if os(watchOS)
+    public func syncPacket() {
         let date = CacheStorageSpace.commonStorageSpace.lastSyncDate()
         if let date = date {
             dataSrcChipher.addMessage("Sync", value: date)
@@ -145,6 +146,18 @@ public class watchSyncProtocol {
             dataSrcChipher.addMessage("Sync", value: [])
         }
         dataSrcChipher.outgoingMessageFlush()
+    }
+    #endif
+    
+    public func updatedKey(key: String)->(NSData, NSDate)? {
+        if let data = WatchSession.defaultSession.receivedInfo()?[key] as? NSData {
+            if let pt = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? watchDataPoint {
+                if let data = pt.data, date = pt.lastUpdatedTime {
+                    return (data, date)
+                }
+            }
+        }
+        return nil
     }
     
 }

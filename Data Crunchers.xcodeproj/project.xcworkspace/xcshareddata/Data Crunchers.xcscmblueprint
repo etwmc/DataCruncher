@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4D9F8BE19CCD6AD71CE305AF0BDAE83DD27546D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4D9F8BE19CCD6AD71CE305AF0BDAE83DD27546D8" : 0,
+    "3F00198FD7638102954E2D442697C31855C6A5BC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "00B62BFB-14C7-4E0D-B1FF-6EE2C6563B08",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4D9F8BE19CCD6AD71CE305AF0BDAE83DD27546D8" : "Data%20Crunchers\/",
+    "3F00198FD7638102954E2D442697C31855C6A5BC" : "Data%20Crunchers\/Kanna\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Data Crunchers",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Data Crunchers.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tid-kijyun\/Kanna.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F00198FD7638102954E2D442697C31855C6A5BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/etwmc\/DataCruncher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4D9F8BE19CCD6AD71CE305AF0BDAE83DD27546D8"
+    }
+  ]
+}

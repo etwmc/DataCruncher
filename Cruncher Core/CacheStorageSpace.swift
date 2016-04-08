@@ -31,11 +31,6 @@ public class CacheStorageSpace: NSObject {
     public static let commonStorageSpace = CacheStorageSpace()
     
     public override init() {
-        #if os(watchOS)
-            dispatch_async(dispatch_get_main_queue()) {
-                watchSyncProtocol.sharedProtocol.syncPacket()
-            }
-        #endif
     }
     
     private let dispatchQueue = dispatch_queue_create("Cache Queue", DISPATCH_QUEUE_CONCURRENT)
@@ -132,7 +127,7 @@ public class CacheStorageSpace: NSObject {
         return date
     }
     
-    func syncPacket(lastSyncDate: NSDate, timeframe: NSTimeInterval = 24*60*60.0)->NSData {
+    func syncPacket(lastSyncDate: NSDate, timeframe: NSTimeInterval = 2*24*60*60.0)->NSData {
         
         let copies = self.storageObject().mapValues { (input: [NSDate : NSData]) -> [NSDate: NSData] in
             let keys = input.keys.filter({ (date: NSDate) -> Bool in
@@ -145,7 +140,6 @@ public class CacheStorageSpace: NSObject {
             return tmp
         }
         var finalResult: [String:[NSDate: NSData]] = [:]
-        CCStorageContextManager.sharedManager().waitForImport()
         for (key, values) in copies {
             //Only sync 24 hours
             //From backend
@@ -184,6 +178,7 @@ public class CacheStorageSpace: NSObject {
     }
     
     func backendBucket(bucketName: String)->CCStorageBucket? {
+        CCStorageContextManager.sharedManager().waitForImport()
         let kvs = CCKeyValueStorage.sharedStorage()
         return kvs.fetchBucket(bucketName)
     }

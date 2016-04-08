@@ -17,12 +17,10 @@
 @end
 @implementation NSManagedObjectContext (AutosaveExtension)
 - (void)autosave:(NSTimer *)save {
-    if (self.hasChanges)
-        [self performBlock:^{
-            [self save:nil];
-            [self reset];
-        }];
-    else [self reset];
+    [self performBlock:^{
+        NSLog(@"Auto save");
+        [self save:nil];
+    }];
 }
 - (void)didImportUbiquitousContentChanges:(NSNotification*) notification {
     NSLog(@"Import Ubi: %@", notification);

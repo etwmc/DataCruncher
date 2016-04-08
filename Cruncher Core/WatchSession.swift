@@ -11,9 +11,11 @@ import WatchConnectivity
     import ClockKit
 #endif
 
+#if os(watchOS)
 @objc public protocol WatchSessionDelegate {
-    optional func sessionHasComplicationUpdate(session: WatchSession, info: [String: NSObject])
+    optional func sessionHasComplicationUpdate(info: [String: NSObject])
 }
+#endif
 
 func platformSensitiveFunction<T>(functionDescibe: String,
                                inout osxCode: T?,
@@ -42,13 +44,19 @@ public class WatchSession: NSObject, WCSessionDelegate {
     
     var session: WCSession?
     
+    var context: [String: AnyObject] = [:]
+    
+    let seamphore = dispatch_semaphore_create(0)
+    
     public override init() {
         super.init()
+        self.sessionInit()
     }
     
     internal func sessionInit() {
         if (WCSession.isSupported()) {
             session = WCSession.defaultSession()
+            context = WCSession.defaultSession().applicationContext
         } else { session = nil }
         session?.delegate = self
         session?.activateSession()
@@ -56,6 +64,9 @@ public class WatchSession: NSObject, WCSessionDelegate {
     
     public func canSendMessage()->Bool {
         if #available(iOS 9.3, *) {
+            if (session?.activationState != .Activated) {
+                session?.activateSession()
+            }
             return (session != nil) && (session?.activationState == .Activated)
         } else {
             // Fallback on earlier versions
@@ -64,6 +75,7 @@ public class WatchSession: NSObject, WCSessionDelegate {
     }
     
     public func sendUserInfo(dict: [String: AnyObject]) {
+        debugPrint("Send User Info")
         if (canSendMessage()) {
             #if os(iOS)
                 if (session != nil && session!.reachable) {
@@ -89,46 +101,95 @@ public class WatchSession: NSObject, WCSessionDelegate {
     }
     
     //Keep track of the watch app status
+    #if os(iOS)
     public func sessionWatchStateDidChange(_session: WCSession) {
-        #if os(iOS)
-            if (!_session.paired && !_session.watchAppInstalled) {
-                self.session = nil
-            } else if (self.session == nil) {
-                self.session = WCSession.defaultSession()
-            }
-        #endif
+        debugPrint("Watch State Did Change")
+        //if (!_session.paired && !_session.watchAppInstalled) {
+            //self.session = nil
+        //} else if (self.session == nil) {
+            //self.session = WCSession.defaultSession()
+    }
+    #endif
+    
+    @available(iOS 9.3, *)
+    public func session(session: WCSession, activationDidCompleteWithState activationState: WCSessionActivationState, error: NSError?) {
+        do {
+            try session.updateApplicationContext(context)
+            //Wake up the phone app
+            #if os(watchOS)
+                session.sendMessage([" ":""], replyHandler: nil, errorHandler: nil)
+            #endif
+        } catch {
+            debugPrint("Error on update context")
+        }
     }
     
     public func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
         monitor?.incomingMessageReceive(message)
+        debugPrint("Receive Message")
     }
     
     public func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
         monitor?.incomingMessageReceive(userInfo)
+        debugPrint("Receive User Info")
     }
     
     #if os(iOS)
     public func sendComplicationInfo(dict: [String: AnyObject]) {
-        if (canSendMessage()) {
-            session?.transferCurrentComplicationUserInfo(dict)
-        } else {
-            print("Can't send complication info \(dict)")
+        var updated = false;
+        debugPrint("Send Complication")
+        //Update context
+        if let complicationList = session?.receivedApplicationContext["ComplcationKeys"] as? [String] {
+            for key in dict.keys {
+                if complicationList.contains(key) {
+                    context[key] = dict[key]
+                    updated = true
+                }
+            }
+        }
+        if (updated) {
+            contextUpdate(context)
         }
     }
     #endif
     
-    func contextUpdate(context: [String: AnyObject]) {
+    #if os(watchOS)
+    public func subscribeKeys(keys: [String]) {
+        debugPrint("Update subscribe")
+        //Update context
+        context["ComplcationKeys"] = keys
+        contextUpdate(context)
+    }
+    #endif
+    
+    public func receivedInfo()->[String: AnyObject]? {
+        return session?.receivedApplicationContext
+    }
+    
+    public func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
+        #if os(iOS)
+            if let keys = applicationContext["ComplcationKeys"] as? [String] {
+            for key in keys {
+                let (date, data) = CacheStorageSpace.commonStorageSpace.newestValueForKey(key)!
+                let pt = watchDataPoint(key: key, data: data, lastUpdatedTime: date)
+                let packet = NSKeyedArchiver.archivedDataWithRootObject(pt)
+                contextUpdate([key: packet])
+            }
+            }
+        #endif
+    }
+    
+    private func contextUpdate(context: [String: AnyObject]) {
+        debugPrint("Context Update")
         do {
             if (canSendMessage()) {
                 try session?.updateApplicationContext(context)
+            } else {
+                debugPrint("Hasn't print")
             }
         } catch {
             debugPrint("Context Update error")
         }
-    }
-    
-    func context()->[String: AnyObject]? {
-        return session?.receivedApplicationContext
     }
     
 }

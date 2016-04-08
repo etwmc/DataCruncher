@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CruncherCore
 
 class ComplicationSetting {
     static func addSubscribe(bucketName: String) {
@@ -15,6 +16,7 @@ class ComplicationSetting {
         array?.append(bucketName)
         NSUserDefaults.standardUserDefaults().setObject(array, forKey: "Complication")
         NSUserDefaults.standardUserDefaults().synchronize()
+        WatchSession.defaultSession.subscribeKeys(array!)
     }
     static func fetchSubscribe()->[String]? {
         let array = NSUserDefaults.standardUserDefaults().arrayForKey("Complication") as? [String]
@@ -26,6 +28,7 @@ class ComplicationSetting {
             array?.removeAtIndex(index)
             NSUserDefaults.standardUserDefaults().setObject(array, forKey: "Complication")
             NSUserDefaults.standardUserDefaults().synchronize()
+            WatchSession.defaultSession.subscribeKeys(array!)
         }
     }
     static func isSubscribe(bucketName: String)->Bool {

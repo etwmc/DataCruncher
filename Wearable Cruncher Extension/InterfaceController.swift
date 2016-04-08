@@ -65,6 +65,9 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+            dispatch_async(dispatch_get_main_queue()) {
+                watchSyncProtocol.sharedProtocol.syncPacket()
+            }
     }
 
     override func didDeactivate() {
